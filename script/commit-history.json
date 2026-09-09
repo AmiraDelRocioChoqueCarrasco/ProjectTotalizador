@@ -361,12 +361,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8d942e78c9f1d577a35a6e07426009db947d9a3a",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T18:42:31.000Z",
       "message": "feat: implementacion de presenter.js",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/8d942e78c9f1d577a35a6e07426009db947d9a3a"
     },
     "stats": {
       "total": 9,
@@ -376,6 +376,25 @@
     },
     "coverage": 88.24,
     "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T18:48:19.000Z",
+      "message": "feat: retornar 0 de descuento para compras menores a $1000",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 10,
+      "deletions": 0,
+      "date": "2026-09-09"
+    },
+    "coverage": 88.89,
+    "test_count": 13,
     "failed_tests": 0,
     "conclusion": "success"
   }

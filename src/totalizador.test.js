@@ -58,3 +58,9 @@ describe("Ciclo 2: Impuestos por Estado y Selección por Defecto", () => {
     expect(() => Totalizador.calcularImpuestoEstado(100, "XYZ")).toThrow("Estado inválido seleccionado");
   });
 });
+
+describe("Ciclo 3: Descuentos por Monto", () => {
+    it("debería retornar 0 de descuento si el monto neto es menor a $1,000", () => {
+    expect(Totalizador.calcularDescuentoMonto(500)).toBe(0);
+  });
+});

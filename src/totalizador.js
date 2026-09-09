@@ -43,4 +43,8 @@ export class Totalizador {
     }
     return Math.round(precioNeto * tasa * 100) / 100;
   }
+
+  static calcularDescuentoMonto(precioNeto) {
+    return 0;
+  }
 }
