@@ -452,7 +452,7 @@
     "testId": 22
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ecfa1a39cacc8aad7796bc2d3ca1f492d7848a19",
     "commitName": "feat: aplicar 3% de descuento para montos de $1000 o mas",
     "commitTimestamp": 1788979865984,
     "testId": 22
@@ -486,5 +486,35 @@
     "commitName": "feat: aplicar 5% de descuento para montos de $3000 o mas",
     "commitTimestamp": 1788980043326,
     "testId": 23
+  },
+  {
+    "numPassedTests": 15,
+    "failedTests": 1,
+    "numTotalTests": 16,
+    "timestamp": 1788980069787,
+    "success": false,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 16,
+    "failedTests": 0,
+    "numTotalTests": 16,
+    "timestamp": 1788980123134,
+    "success": true,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 16,
+    "failedTests": 0,
+    "numTotalTests": 16,
+    "timestamp": 1788980139276,
+    "success": true,
+    "testId": 24
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: aplicar 7% de descuento para montos de $7000 o mas",
+    "commitTimestamp": 1788980164681,
+    "testId": 24
   }
 ]
