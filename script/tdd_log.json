@@ -1162,7 +1162,7 @@
     "testId": 51
   },
   {
-    "commitId": "HEAD",
+    "commitId": "40f660f66e590abe589a9d80e9efab4ab5b08b8d",
     "commitName": "refactor: estructurar descuentos por tipo de cliente en diccionario estatico",
     "commitTimestamp": 1788993914501,
     "testId": 51
@@ -1188,5 +1188,11 @@
     "commitName": "feat: calcular total final consolidando todos los descuentos e impuestos",
     "commitTimestamp": 1788994035290,
     "testId": 52
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: integrar tipo de cliente y total final en la vista principal",
+    "commitTimestamp": 1788994145940,
+    "testId": 53
   }
 ]

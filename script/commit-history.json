@@ -969,17 +969,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "40f660f66e590abe589a9d80e9efab4ab5b08b8d",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T22:47:14.000Z",
       "message": "feat: calcular total final consolidando todos los descuentos e impuestos",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/40f660f66e590abe589a9d80e9efab4ab5b08b8d"
     },
     "stats": {
       "total": 27,
       "additions": 27,
       "deletions": 0,
+      "date": "2026-09-09"
+    },
+    "coverage": 88.89,
+    "test_count": 29,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T22:49:04.000Z",
+      "message": "feat: integrar tipo de cliente y total final en la vista principal",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 27,
+      "additions": 25,
+      "deletions": 2,
       "date": "2026-09-09"
     },
     "coverage": 88.89,
