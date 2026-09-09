@@ -722,12 +722,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8ad45c54278ccb4a6ab9f0926b14a44c52ff51b8",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T19:51:47.000Z",
       "message": "feat: implementacion de presentar.js",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/8ad45c54278ccb4a6ab9f0926b14a44c52ff51b8"
     },
     "stats": {
       "total": 16,
@@ -737,6 +737,25 @@
     },
     "coverage": 94.29,
     "test_count": 28,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T20:01:10.000Z",
+      "message": "fix: agregar validación para peso volumétrico vacío o negativo",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 21,
+      "additions": 20,
+      "deletions": 1,
+      "date": "2026-09-09"
+    },
+    "coverage": 94.87,
+    "test_count": 29,
     "failed_tests": 0,
     "conclusion": "success"
   }

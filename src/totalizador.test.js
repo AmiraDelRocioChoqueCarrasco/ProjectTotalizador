@@ -136,8 +136,18 @@ describe ("Ciclo 4: Categoría de Producto", () => {
     expect(Totalizador.obtenerDescuentoCategoria("Electrónicos")).toBe(0.01);
     expect(Totalizador.obtenerImpuestoCategoria("Vestimenta")).toBe(0.02);
   });
+
   it("debería calcular los montos exactos de impuesto y descuento por categoría", () => {
     expect(Totalizador.calcularDescuentoCategoria(100, "Alimentos")).toBe(2);
     expect(Totalizador.calcularImpuestoCategoria(100, "Bebidas alcohólicas")).toBe(7);
+  });
+
+});
+
+describe ("Ciclo 4: Categoría de Producto", () => {
+  it("debería lanzar error si el peso volumétrico está vacío o es menor a cero", () => {
+    expect(() => Totalizador.validarPeso("")).toThrow("Ingresa un peso volumétrico válido (mayor o igual a 0)");
+    expect(() => Totalizador.validarPeso(-3)).toThrow("Ingresa un peso volumétrico válido (mayor o igual a 0)");
+    expect(Totalizador.validarPeso(0)).toBe(0);
   });
 });

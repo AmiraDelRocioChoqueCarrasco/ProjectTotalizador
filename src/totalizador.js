@@ -97,4 +97,13 @@ export class Totalizador {
     const tasa = this.obtenerImpuestoCategoria(categoria);
     return Math.round(precioNeto * tasa * 100) / 100;
   }
+
+  static validarPeso(valor) {
+    const peso = this.convertirANumero(valor);
+    if (valor === "" || valor === null || isNaN(peso) || peso < 0) {
+      throw new Error("Ingresa un peso volumétrico válido (mayor o igual a 0)");
+    }
+    return peso;
+  }
 }
+
