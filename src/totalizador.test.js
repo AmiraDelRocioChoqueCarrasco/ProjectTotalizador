@@ -26,26 +26,33 @@ describe("Ciclo 1: Entradas, Precio Neto y Validaciones", () => {
     expect(() => Totalizador.validarPrecio(-10)).toThrow("Ingresa un precio válido mayor a cero");
   });
 });
-describe("Ciclo 2: Impuestos por Estado", () => {
+
+describe("Ciclo 2: Impuestos por Estado y Selección por Defecto", () => {
   it("debería retornar CA como estado por defecto si el valor ingresado es vacío o nulo", () => {
     expect(Totalizador.obtenerEstado("")).toBe("CA");
     expect(Totalizador.obtenerEstado(null)).toBe("CA");
   });
+
   it("debería calcular el impuesto para California (8.25%) sobre un precio neto", () => {
     expect(Totalizador.calcularImpuestoEstado(100, "CA")).toBe(8.25);
   });
+
   it("debería calcular el impuesto para Alabama (4.00%) sobre un precio neto", () => {
     expect(Totalizador.calcularImpuestoEstado(100, "AL")).toBe(4.00);
   });
+
   it("debería calcular el impuesto para Nevada (8.00%) sobre un precio neto", () => {
     expect(Totalizador.calcularImpuestoEstado(100, "NV")).toBe(8.00);
   });
+
   it("debería calcular el impuesto para Utah (6.65%) sobre un precio neto", () => {
     expect(Totalizador.calcularImpuestoEstado(100, "UT")).toBe(6.65);
   });
+
   it("debería calcular el impuesto para Texas (6.25%) sobre un precio neto", () => {
     expect(Totalizador.calcularImpuestoEstado(100, "TX")).toBe(6.25);
   });
+
   it("debería lanzar un error si se ingresa un código de estado no válido", () => {
     expect(() => Totalizador.calcularImpuestoEstado(100, "NY")).toThrow("Estado inválido seleccionado");
     expect(() => Totalizador.calcularImpuestoEstado(100, "XYZ")).toThrow("Estado inválido seleccionado");

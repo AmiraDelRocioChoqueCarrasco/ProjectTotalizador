@@ -360,7 +360,7 @@
     "testId": 16
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f27ee235bd5d9374fd92d690b528057961fcfb60",
     "commitName": "refactor: estructurar tasas de impuestos de estados en diccionario estatico",
     "commitTimestamp": 1788979016515,
     "testId": 16
@@ -386,5 +386,19 @@
     "commitName": "fix: lanzar error ante codigos de estado no reconocidos",
     "commitTimestamp": 1788979077875,
     "testId": 17
+  },
+  {
+    "numPassedTests": 12,
+    "failedTests": 0,
+    "numTotalTests": 12,
+    "timestamp": 1788979193964,
+    "success": true,
+    "testId": 18
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Refactorizacion del codigo",
+    "commitTimestamp": 1788979224944,
+    "testId": 18
   }
 ]

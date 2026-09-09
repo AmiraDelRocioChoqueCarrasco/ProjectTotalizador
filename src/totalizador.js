@@ -1,5 +1,12 @@
 export class Totalizador {
-  ///ciclo 1
+  static TASAS_IMPUESTOS = {
+    CA: 0.0825,
+    AL: 0.0400,
+    NV: 0.0800,
+    UT: 0.0665,
+    TX: 0.0625,
+  };
+
   static convertirANumero(valor) {
     return Number(valor);
   }
@@ -20,56 +27,14 @@ export class Totalizador {
     return precio;
   }
 
-  static calcularPrecioNeto(cantidad, precio) {
-    return Math.round(cantidad * precio * 100) / 100;
-  }
-
-  ///ciclo 2
   static obtenerEstado(estado) {
     return estado ? estado.toUpperCase() : "CA";
   }
 
-  static calcularImpuestoEstado(precioNeto, estado) {
-    const est = this.obtenerEstado(estado);
-    if (est === "CA") {
-      return Math.round(precioNeto * 0.0825 * 100) / 100;
-    }
-    return 0;
+  static calcularPrecioNeto(cantidad, precio) {
+    return Math.round(cantidad * precio * 100) / 100;
   }
-  static calcularImpuestoEstado(precioNeto, estado) {
-    const est = this.obtenerEstado(estado);
-    if (est === "CA") return Math.round(precioNeto * 0.0825 * 100) / 100;
-    if (est === "AL") return Math.round(precioNeto * 0.0400 * 100) / 100;
-    return 0;
-  }
-  static calcularImpuestoEstado(precioNeto, estado) {
-    const est = this.obtenerEstado(estado);
-    if (est === "CA") return Math.round(precioNeto * 0.0825 * 100) / 100;
-    if (est === "AL") return Math.round(precioNeto * 0.0400 * 100) / 100;
-    if (est === "NV") return Math.round(precioNeto * 0.0800 * 100) / 100;
-    return 0;
-  }
-  static calcularImpuestoEstado(precioNeto, estado) {
-    const est = this.obtenerEstado(estado);
-    if (est === "CA") return Math.round(precioNeto * 0.0825 * 100) / 100;
-    if (est === "AL") return Math.round(precioNeto * 0.0400 * 100) / 100;
-    if (est === "NV") return Math.round(precioNeto * 0.0800 * 100) / 100;
-    if (est === "UT") return Math.round(precioNeto * 0.0665 * 100) / 100;
-    return 0;
-  }
-  static TASAS_IMPUESTOS = {
-    CA: 0.0825,
-    AL: 0.0400,
-    NV: 0.0800,
-    UT: 0.0665,
-    TX: 0.0625,
-  };
 
-  static calcularImpuestoEstado(precioNeto, estado) {
-    const est = this.obtenerEstado(estado);
-    const tasa = this.TASAS_IMPUESTOS[est] || 0;
-    return Math.round(precioNeto * tasa * 100) / 100;
-  }
   static calcularImpuestoEstado(precioNeto, estado) {
     const est = this.obtenerEstado(estado);
     const tasa = this.TASAS_IMPUESTOS[est];
