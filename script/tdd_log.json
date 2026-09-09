@@ -914,7 +914,7 @@
     "testId": 38
   },
   {
-    "commitId": "HEAD",
+    "commitId": "3ba4a9b214939d274c809ec328e6e1cd8cb62801",
     "commitName": "feat: implementacion de presentar.js",
     "commitTimestamp": 1788983508410,
     "testId": 39
@@ -948,5 +948,35 @@
     "commitName": "fix: agregar validación para peso volumétrico vacío o negativo",
     "commitTimestamp": 1788984071316,
     "testId": 40
+  },
+  {
+    "numPassedTests": 29,
+    "failedTests": 1,
+    "numTotalTests": 30,
+    "timestamp": 1788984100333,
+    "success": false,
+    "testId": 41
+  },
+  {
+    "numPassedTests": 29,
+    "failedTests": 1,
+    "numTotalTests": 30,
+    "timestamp": 1788984127676,
+    "success": false,
+    "testId": 41
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 0,
+    "numTotalTests": 30,
+    "timestamp": 1788984166008,
+    "success": true,
+    "testId": 41
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: calcular tarifas de envío por unidad según peso volumétrico",
+    "commitTimestamp": 1788984177252,
+    "testId": 41
   }
 ]

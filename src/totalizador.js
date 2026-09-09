@@ -105,5 +105,19 @@ export class Totalizador {
     }
     return peso;
   }
+
+  static TARIFAS_ENVIO = [
+    { max: 10, tarifa: 0 },
+    { max: 20, tarifa: 3.5 },
+    { max: 40, tarifa: 5 },
+    { max: 80, tarifa: 6 },
+    { max: 100, tarifa: 6.5 },
+    { max: 200, tarifa: 8 },
+  ];
+
+  static obtenerTarifaEnvioUnitaria(peso) {
+    const rango = this.TARIFAS_ENVIO.find((r) => peso <= r.max);
+    return rango ? rango.tarifa : 9;
+  }
 }
 

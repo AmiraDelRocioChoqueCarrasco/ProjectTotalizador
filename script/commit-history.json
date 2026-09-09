@@ -741,12 +741,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3ba4a9b214939d274c809ec328e6e1cd8cb62801",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T20:01:10.000Z",
       "message": "fix: agregar validación para peso volumétrico vacío o negativo",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/3ba4a9b214939d274c809ec328e6e1cd8cb62801"
     },
     "stats": {
       "total": 21,
@@ -756,6 +756,25 @@
     },
     "coverage": 94.87,
     "test_count": 29,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T20:02:56.000Z",
+      "message": "feat: calcular tarifas de envío por unidad según peso volumétrico",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 24,
+      "additions": 24,
+      "deletions": 0,
+      "date": "2026-09-09"
+    },
+    "coverage": 95.35,
+    "test_count": 30,
     "failed_tests": 0,
     "conclusion": "success"
   }

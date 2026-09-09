@@ -150,4 +150,14 @@ describe ("Ciclo 4: Categoría de Producto", () => {
     expect(() => Totalizador.validarPeso(-3)).toThrow("Ingresa un peso volumétrico válido (mayor o igual a 0)");
     expect(Totalizador.validarPeso(0)).toBe(0);
   });
+
+  it("debería obtener la tarifa de envío unitaria correcta según el rango de peso volumétrico", () => {
+    expect(Totalizador.obtenerTarifaEnvioUnitaria(5)).toBe(0);    // Hasta 10
+    expect(Totalizador.obtenerTarifaEnvioUnitaria(15)).toBe(3.5);  // 11 a 20
+    expect(Totalizador.obtenerTarifaEnvioUnitaria(30)).toBe(5);    // 21 a 40
+    expect(Totalizador.obtenerTarifaEnvioUnitaria(50)).toBe(6);    // 41 a 80
+    expect(Totalizador.obtenerTarifaEnvioUnitaria(90)).toBe(6.5);  // 81 a 100
+    expect(Totalizador.obtenerTarifaEnvioUnitaria(150)).toBe(8);   // 101 a 200
+    expect(Totalizador.obtenerTarifaEnvioUnitaria(250)).toBe(9);   // Mayor a 200
+  });
 });
