@@ -145,4 +145,26 @@ describe ("Ciclo 6: Tipo de Cliente y Fijos", () => {
   it("debería calcular el monto de descuento por tipo de cliente sobre el precio neto", () => {
     expect(Totalizador.calcularDescuentoCliente(1000, "Especial")).toBe(15);
   });
+
+  it("debería calcular el Total Final considerando netos, descuentos, impuestos y envío", () => {
+    // Ejemplo: Neto = 1000, CA (8.25%), Alimentos (2% desc), Especial (1.5% desc), Peso 15 (Tarifa 3.5), Cantidad 1
+    // Neto: 1000
+    // Desc Monto (3%): 30
+    // Desc Categoria (2%): 20
+    // Desc Cliente (1.5%): 15
+    // Imp Estado (8.25%): 82.5
+    // Imp Categoria (0%): 0
+    // Envio (3.5 * 1): 3.5
+    // Total = 1000 - 30 - 20 - 15 + 82.5 + 0 + 3.5 = 1021
+    const total = Totalizador.calcularTotalFinal({
+      neto: 1000,
+      descMonto: 30,
+      descCat: 20,
+      descCliente: 15,
+      impEstado: 82.5,
+      impCat: 0,
+      costoEnvio: 3.5
+    });
+    expect(total).toBe(1021);
+  });
 });

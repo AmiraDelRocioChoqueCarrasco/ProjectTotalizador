@@ -1148,7 +1148,7 @@
     "testId": 50
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ec0521c847a172b1039e4dcee0275497f5d1b9c9",
     "commitName": "feat: calcular monto de descuento por tipo de cliente",
     "commitTimestamp": 1788993845237,
     "testId": 50
@@ -1166,5 +1166,27 @@
     "commitName": "refactor: estructurar descuentos por tipo de cliente en diccionario estatico",
     "commitTimestamp": 1788993914501,
     "testId": 51
+  },
+  {
+    "numPassedTests": 28,
+    "failedTests": 1,
+    "numTotalTests": 29,
+    "timestamp": 1788993936540,
+    "success": false,
+    "testId": 52
+  },
+  {
+    "numPassedTests": 29,
+    "failedTests": 0,
+    "numTotalTests": 29,
+    "timestamp": 1788993966221,
+    "success": true,
+    "testId": 52
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: calcular total final consolidando todos los descuentos e impuestos",
+    "commitTimestamp": 1788994035290,
+    "testId": 52
   }
 ]

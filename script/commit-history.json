@@ -950,12 +950,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ec0521c847a172b1039e4dcee0275497f5d1b9c9",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T22:45:13.000Z",
       "message": "refactor: estructurar descuentos por tipo de cliente en diccionario estatico",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/ec0521c847a172b1039e4dcee0275497f5d1b9c9"
     },
     "stats": {
       "total": 26,
@@ -965,6 +965,25 @@
     },
     "coverage": 88.46,
     "test_count": 28,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T22:47:14.000Z",
+      "message": "feat: calcular total final consolidando todos los descuentos e impuestos",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 27,
+      "additions": 27,
+      "deletions": 0,
+      "date": "2026-09-09"
+    },
+    "coverage": 88.89,
+    "test_count": 29,
     "failed_tests": 0,
     "conclusion": "success"
   }

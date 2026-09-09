@@ -146,4 +146,9 @@ export class Totalizador {
     const tasa = this.obtenerDescuentoCliente(tipo);
     return Math.round(precioNeto * tasa * 100) / 100;
   }
+
+  static calcularTotalFinal({ neto, descMonto, descCat, descCliente, impEstado, impCat, costoEnvio }) {
+    const total = neto - descMonto - descCat - descCliente + impEstado + impCat + costoEnvio;
+    return Math.round(total * 100) / 100;
+  }
 }
