@@ -627,12 +627,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "22919499540f54e134b4e07937f23a445470dd0a",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T19:40:43.000Z",
       "message": "feat: agregar impuesto adicional del 3% para Muebles",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/22919499540f54e134b4e07937f23a445470dd0a"
     },
     "stats": {
       "total": 11,
@@ -642,6 +642,25 @@
     },
     "coverage": 77.27,
     "test_count": 24,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T19:41:52.000Z",
+      "message": "feat: agregar reglas de impuesto y descuento para Electronicos",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 21,
+      "additions": 21,
+      "deletions": 0,
+      "date": "2026-09-09"
+    },
+    "coverage": 63.33,
+    "test_count": 25,
     "failed_tests": 0,
     "conclusion": "success"
   }

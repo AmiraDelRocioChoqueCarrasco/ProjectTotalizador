@@ -742,7 +742,7 @@
     "testId": 33
   },
   {
-    "commitId": "HEAD",
+    "commitId": "22919499540f54e134b4e07937f23a445470dd0a",
     "commitName": "feat: agregar descuento adicional del 1.5% para Material de escritorio",
     "commitTimestamp": 1788982637673,
     "testId": 33
@@ -776,5 +776,35 @@
     "commitName": "feat: agregar impuesto adicional del 3% para Muebles",
     "commitTimestamp": 1788982844467,
     "testId": 34
+  },
+  {
+    "numPassedTests": 24,
+    "failedTests": 1,
+    "numTotalTests": 25,
+    "timestamp": 1788982863041,
+    "success": false,
+    "testId": 35
+  },
+  {
+    "numPassedTests": 24,
+    "failedTests": 1,
+    "numTotalTests": 25,
+    "timestamp": 1788982883123,
+    "success": false,
+    "testId": 35
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 0,
+    "numTotalTests": 25,
+    "timestamp": 1788982897711,
+    "success": true,
+    "testId": 35
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar reglas de impuesto y descuento para Electronicos",
+    "commitTimestamp": 1788982913349,
+    "testId": 35
   }
 ]

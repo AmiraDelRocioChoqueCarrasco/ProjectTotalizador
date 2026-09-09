@@ -117,4 +117,9 @@ describe ("Ciclo 4: Categoría de Producto", () => {
   it("debería retornar 3% de impuesto adicional para Muebles", () => {
     expect(Totalizador.obtenerImpuestoCategoria("Muebles")).toBe(0.03);
   });
+
+  it("debería retornar 4% de impuesto y 1% de descuento adicional para Electrónicos", () => {
+    expect(Totalizador.obtenerImpuestoCategoria("Electrónicos")).toBe(0.04);
+    expect(Totalizador.obtenerDescuentoCategoria("Electrónicos")).toBe(0.01);
+  });
 });
