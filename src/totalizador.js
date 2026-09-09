@@ -103,9 +103,33 @@ export class Totalizador {
 
   static obtenerDescuentoCategoria(categoria) {
     const cat = this.obtenerCategoria(categoria);
-    if (cat === "Alimentos") return 0.02;
-    if (cat === "Material de escritorio") return 0.015;
-    if (cat === "Electrónicos") return 0.01;
-    return 0;
+    const regla = this.REGLAS_CATEGORIA[cat];
+    return regla ? regla.descuento : 0;
+  }
+
+  static REGLAS_CATEGORIA = {
+    Varios: { impuesto: 0, descuento: 0 },
+    Alimentos: { impuesto: 0, descuento: 0.02 },
+    "Bebidas alcohólicas": { impuesto: 0.07, descuento: 0 },
+    "Material de escritorio": { impuesto: 0, descuento: 0.015 },
+    Muebles: { impuesto: 0.03, descuento: 0 },
+    Electrónicos: { impuesto: 0.04, descuento: 0.01 },
+    Vestimenta: { impuesto: 0.02, descuento: 0 },
+  };
+
+  static obtenerImpuestoCategoria(categoria) {
+    const cat = this.obtenerCategoria(categoria);
+    const regla = this.REGLAS_CATEGORIA[cat];
+    return regla ? regla.impuesto : 0;
+  }
+
+  static calcularDescuentoCategoria(precioNeto, categoria) {
+    const tasa = this.obtenerDescuentoCategoria(categoria);
+    return Math.round(precioNeto * tasa * 100) / 100;
+  }
+
+  static calcularImpuestoCategoria(precioNeto, categoria) {
+    const tasa = this.obtenerImpuestoCategoria(categoria);
+    return Math.round(precioNeto * tasa * 100) / 100;
   }
 }

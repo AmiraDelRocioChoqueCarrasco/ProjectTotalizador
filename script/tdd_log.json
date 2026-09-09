@@ -772,7 +772,7 @@
     "testId": 34
   },
   {
-    "commitId": "HEAD",
+    "commitId": "cc4044efd0bb2f6f5817f67917967bfff4bf8fb1",
     "commitName": "feat: agregar impuesto adicional del 3% para Muebles",
     "commitTimestamp": 1788982844467,
     "testId": 34
@@ -806,5 +806,75 @@
     "commitName": "feat: agregar reglas de impuesto y descuento para Electronicos",
     "commitTimestamp": 1788982913349,
     "testId": 35
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 0,
+    "numTotalTests": 25,
+    "timestamp": 1788982932059,
+    "success": true,
+    "testId": 36
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1788982963516,
+    "success": false,
+    "testId": 36
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1788982991652,
+    "success": false,
+    "testId": 36
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1788983020265,
+    "success": false,
+    "testId": 36
+  },
+  {
+    "numPassedTests": 26,
+    "failedTests": 0,
+    "numTotalTests": 26,
+    "timestamp": 1788983037803,
+    "success": true,
+    "testId": 36
+  },
+  {
+    "numPassedTests": 26,
+    "failedTests": 0,
+    "numTotalTests": 26,
+    "timestamp": 1788983087095,
+    "success": true,
+    "testId": 36
+  },
+  {
+    "numPassedTests": 26,
+    "failedTests": 0,
+    "numTotalTests": 26,
+    "timestamp": 1788983154612,
+    "success": true,
+    "testId": 36
+  },
+  {
+    "numPassedTests": 26,
+    "failedTests": 0,
+    "numTotalTests": 26,
+    "timestamp": 1788983185555,
+    "success": true,
+    "testId": 36
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: estructurar reglas de categoria en diccionario estatico unificado",
+    "commitTimestamp": 1788983210151,
+    "testId": 36
   }
 ]

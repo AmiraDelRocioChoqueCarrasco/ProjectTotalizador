@@ -646,12 +646,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "cc4044efd0bb2f6f5817f67917967bfff4bf8fb1",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T19:41:52.000Z",
       "message": "feat: agregar reglas de impuesto y descuento para Electronicos",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/cc4044efd0bb2f6f5817f67917967bfff4bf8fb1"
     },
     "stats": {
       "total": 21,
@@ -661,6 +661,25 @@
     },
     "coverage": 63.33,
     "test_count": 25,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T19:46:48.000Z",
+      "message": "refactor: estructurar reglas de categoria en diccionario estatico unificado",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 36,
+      "additions": 32,
+      "deletions": 4,
+      "date": "2026-09-09"
+    },
+    "coverage": 46.03,
+    "test_count": 26,
     "failed_tests": 0,
     "conclusion": "success"
   }

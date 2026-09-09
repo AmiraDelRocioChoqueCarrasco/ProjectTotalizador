@@ -122,4 +122,8 @@ describe ("Ciclo 4: Categoría de Producto", () => {
     expect(Totalizador.obtenerImpuestoCategoria("Electrónicos")).toBe(0.04);
     expect(Totalizador.obtenerDescuentoCategoria("Electrónicos")).toBe(0.01);
   });
+
+  it("debería retornar 2% de impuesto adicional para Vestimenta", () => {
+    expect(Totalizador.obtenerImpuestoCategoria("Vestimenta")).toBe(0.02);
+  });
 });
