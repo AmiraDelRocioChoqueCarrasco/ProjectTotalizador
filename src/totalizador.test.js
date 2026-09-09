@@ -126,4 +126,18 @@ describe ("Ciclo 4: Categoría de Producto", () => {
   it("debería retornar 2% de impuesto adicional para Vestimenta", () => {
     expect(Totalizador.obtenerImpuestoCategoria("Vestimenta")).toBe(0.02);
   });
+
+  it("debería obtener las tasas correctas de impuesto y descuento por categoría", () => {
+    expect(Totalizador.obtenerDescuentoCategoria("Alimentos")).toBe(0.02);
+    expect(Totalizador.obtenerImpuestoCategoria("Bebidas alcohólicas")).toBe(0.07);
+    expect(Totalizador.obtenerDescuentoCategoria("Material de escritorio")).toBe(0.015);
+    expect(Totalizador.obtenerImpuestoCategoria("Muebles")).toBe(0.03);
+    expect(Totalizador.obtenerImpuestoCategoria("Electrónicos")).toBe(0.04);
+    expect(Totalizador.obtenerDescuentoCategoria("Electrónicos")).toBe(0.01);
+    expect(Totalizador.obtenerImpuestoCategoria("Vestimenta")).toBe(0.02);
+  });
+  it("debería calcular los montos exactos de impuesto y descuento por categoría", () => {
+    expect(Totalizador.calcularDescuentoCategoria(100, "Alimentos")).toBe(2);
+    expect(Totalizador.calcularImpuestoCategoria(100, "Bebidas alcohólicas")).toBe(7);
+  });
 });

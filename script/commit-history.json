@@ -665,12 +665,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "48a3588089bfb5f4ef6e8430f620884e11cb7093",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T19:46:48.000Z",
       "message": "refactor: estructurar reglas de categoria en diccionario estatico unificado",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/48a3588089bfb5f4ef6e8430f620884e11cb7093"
     },
     "stats": {
       "total": 36,
@@ -680,6 +680,25 @@
     },
     "coverage": 46.03,
     "test_count": 26,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T19:48:34.000Z",
+      "message": "feat: refactorizacion de codigo",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 81,
+      "additions": 30,
+      "deletions": 51,
+      "date": "2026-09-09"
+    },
+    "coverage": 94.29,
+    "test_count": 28,
     "failed_tests": 0,
     "conclusion": "success"
   }

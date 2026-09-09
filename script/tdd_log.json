@@ -802,7 +802,7 @@
     "testId": 35
   },
   {
-    "commitId": "HEAD",
+    "commitId": "48a3588089bfb5f4ef6e8430f620884e11cb7093",
     "commitName": "feat: agregar reglas de impuesto y descuento para Electronicos",
     "commitTimestamp": 1788982913349,
     "testId": 35
@@ -876,5 +876,35 @@
     "commitName": "refactor: estructurar reglas de categoria en diccionario estatico unificado",
     "commitTimestamp": 1788983210151,
     "testId": 36
+  },
+  {
+    "numPassedTests": 27,
+    "failedTests": 0,
+    "numTotalTests": 27,
+    "timestamp": 1788983262636,
+    "success": true,
+    "testId": 37
+  },
+  {
+    "numPassedTests": 28,
+    "failedTests": 0,
+    "numTotalTests": 28,
+    "timestamp": 1788983275829,
+    "success": true,
+    "testId": 37
+  },
+  {
+    "numPassedTests": 28,
+    "failedTests": 0,
+    "numTotalTests": 28,
+    "timestamp": 1788983294933,
+    "success": true,
+    "testId": 37
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: refactorizacion de codigo",
+    "commitTimestamp": 1788983315654,
+    "testId": 37
   }
 ]
