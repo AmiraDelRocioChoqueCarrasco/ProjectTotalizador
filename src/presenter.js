@@ -1,0 +1,25 @@
+import { Totalizador } from "./totalizador.js";
+
+const form = document.querySelector("#totalizador-form");
+const cantidadInput = document.querySelector("#cantidad");
+const precioInput = document.querySelector("#precio");
+const btnCancelar = document.querySelector("#btn-cancelar");
+const resultadoDiv = document.querySelector("#resultado-div");
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  try {
+    const cantidad = Totalizador.validarCantidad(cantidadInput.value);
+    const precio = Totalizador.validarPrecio(precioInput.value);
+    const neto = Totalizador.calcularPrecioNeto(cantidad, precio);
+
+    resultadoDiv.innerHTML = `<p>Precio neto (${cantidad} * $${precio.toFixed(2)}): $${neto.toFixed(2)}</p>`;
+  } catch (error) {
+    resultadoDiv.innerHTML = `<p style="color:red;">Error: ${error.message}</p>`;
+  }
+});
+
+btnCancelar.addEventListener("click", () => {
+  form.reset();
+  resultadoDiv.innerHTML = "";
+});

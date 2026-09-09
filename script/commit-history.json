@@ -152,17 +152,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d5ec138c8c5b7d9caf3154474ca8843cda4c71dd",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T16:04:44.000Z",
       "message": "fix: implementacion de index.html",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/d5ec138c8c5b7d9caf3154474ca8843cda4c71dd"
     },
     "stats": {
       "total": 38,
       "additions": 21,
       "deletions": 17,
+      "date": "2026-09-09"
+    },
+    "coverage": 80,
+    "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T16:05:40.000Z",
+      "message": "feat: integrar interfaz de usuario con validaciones y cancelacion de compra",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 25,
+      "additions": 25,
+      "deletions": 0,
       "date": "2026-09-09"
     },
     "coverage": 80,
