@@ -28,7 +28,7 @@
     "testId": 1
   },
   {
-    "commitId": "HEAD",
+    "commitId": "d85e68f8f8755a755e37748f3c6032a125f53ac0",
     "commitName": "Initial commit",
     "commitTimestamp": 1788968534593,
     "testId": 2
@@ -54,5 +54,27 @@
     "commitName": "feat: parsear valores de entrada a tipo numerico",
     "commitTimestamp": 1788969205755,
     "testId": 3
+  },
+  {
+    "numPassedTests": 1,
+    "failedTests": 1,
+    "numTotalTests": 2,
+    "timestamp": 1788969268804,
+    "success": false,
+    "testId": 4
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 0,
+    "numTotalTests": 2,
+    "timestamp": 1788969277611,
+    "success": true,
+    "testId": 4
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: calcular precio neto para cantidades y precios enteros",
+    "commitTimestamp": 1788969343485,
+    "testId": 4
   }
 ]
