@@ -50,7 +50,7 @@
     "testId": 3
   },
   {
-    "commitId": "HEAD",
+    "commitId": "22c31f740b2c6107c722f423686a037c40c97e07",
     "commitName": "feat: parsear valores de entrada a tipo numerico",
     "commitTimestamp": 1788969205755,
     "testId": 3
@@ -76,5 +76,27 @@
     "commitName": "feat: calcular precio neto para cantidades y precios enteros",
     "commitTimestamp": 1788969343485,
     "testId": 4
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 0,
+    "numTotalTests": 3,
+    "timestamp": 1788969376335,
+    "success": true,
+    "testId": 5
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 0,
+    "numTotalTests": 3,
+    "timestamp": 1788969401136,
+    "success": true,
+    "testId": 5
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: soportar calculo de precio neto con decimales y redondeo",
+    "commitTimestamp": 1788969429699,
+    "testId": 5
   }
 ]

@@ -8,4 +8,7 @@ describe("Ciclo 1: Neto y Entrada", () => {
   it("deberia calcular el precio neto multiplicando cantidad por precio (enteros)", () => {
     expect(Totalizador.calcularPrecioNeto(20, 3)).toBe(60);
   });
+  it("deberia calcular el precio neto con precision de dos decimales", () => {
+    expect(Totalizador.calcularPrecioNeto(2.5, 3.5)).toBe(8.75);
+  });
 });
