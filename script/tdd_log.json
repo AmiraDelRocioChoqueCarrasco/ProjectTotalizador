@@ -1126,7 +1126,7 @@
     "testId": 49
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ec35d49d9075d67c95164ea409145d9671360154",
     "commitName": "feat: agregar 1.5% de descuento para cliente Especial",
     "commitTimestamp": 1788993650550,
     "testId": 49
@@ -1152,5 +1152,19 @@
     "commitName": "feat: calcular monto de descuento por tipo de cliente",
     "commitTimestamp": 1788993845237,
     "testId": 50
+  },
+  {
+    "numPassedTests": 28,
+    "failedTests": 0,
+    "numTotalTests": 28,
+    "timestamp": 1788993899249,
+    "success": true,
+    "testId": 51
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: estructurar descuentos por tipo de cliente en diccionario estatico",
+    "commitTimestamp": 1788993914501,
+    "testId": 51
   }
 ]

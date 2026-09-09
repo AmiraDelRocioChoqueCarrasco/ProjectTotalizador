@@ -34,6 +34,13 @@ export class Totalizador {
     { max: 200, tarifa: 8 },
   ];
 
+  static DESCUENTOS_CLIENTE = {
+    Normal: 0,
+    Recurrente: 0.005,
+    Frecuente: 0.01,
+    Especial: 0.015,
+  };
+
   static convertirANumero(valor) {
     return Number(valor);
   }
@@ -131,23 +138,8 @@ export class Totalizador {
 
   static obtenerDescuentoCliente(tipo) {
     const cliente = this.obtenerTipoCliente(tipo);
-    if (cliente === "Recurrente") return 0.005;
-    return 0;
-  }
-
-  static obtenerDescuentoCliente(tipo) {
-    const cliente = this.obtenerTipoCliente(tipo);
-    if (cliente === "Recurrente") return 0.005;
-    if (cliente === "Frecuente") return 0.01;
-    return 0;
-  }
-
- static obtenerDescuentoCliente(tipo) {
-    const cliente = this.obtenerTipoCliente(tipo);
-    if (cliente === "Recurrente") return 0.005;
-    if (cliente === "Frecuente") return 0.01;
-    if (cliente === "Especial") return 0.015;
-    return 0;
+    const tasa = this.DESCUENTOS_CLIENTE[cliente];
+    return tasa !== undefined ? tasa : 0;
   }
 
   static calcularDescuentoCliente(precioNeto, tipo) {
