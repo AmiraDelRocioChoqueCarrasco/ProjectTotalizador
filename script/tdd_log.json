@@ -512,7 +512,7 @@
     "testId": 24
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b7dddda206411f94c4b3c6527e5bd6666c6d1701",
     "commitName": "feat: aplicar 7% de descuento para montos de $7000 o mas",
     "commitTimestamp": 1788980164681,
     "testId": 24
@@ -538,5 +538,59 @@
     "commitName": "feat: aplicar 10% de descuento para montos de $10000 o mas",
     "commitTimestamp": 1788980314150,
     "testId": 25
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 1,
+    "numTotalTests": 18,
+    "timestamp": 1788980332958,
+    "success": false,
+    "testId": 26
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 1,
+    "numTotalTests": 18,
+    "timestamp": 1788980360597,
+    "success": false,
+    "testId": 26
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 1,
+    "numTotalTests": 18,
+    "timestamp": 1788980402096,
+    "success": false,
+    "testId": 26
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 1,
+    "numTotalTests": 18,
+    "timestamp": 1788980423497,
+    "success": false,
+    "testId": 26
+  },
+  {
+    "numPassedTests": 12,
+    "failedTests": 6,
+    "numTotalTests": 18,
+    "timestamp": 1788980445868,
+    "success": false,
+    "testId": 26
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 0,
+    "numTotalTests": 18,
+    "timestamp": 1788980471325,
+    "success": true,
+    "testId": 26
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: estructurar descuentos por monto en arreglo de rangos estaticos",
+    "commitTimestamp": 1788980636142,
+    "testId": 26
   }
 ]

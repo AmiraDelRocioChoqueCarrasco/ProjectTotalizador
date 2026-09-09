@@ -456,12 +456,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b7dddda206411f94c4b3c6527e5bd6666c6d1701",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T18:58:33.000Z",
       "message": "feat: aplicar 10% de descuento para montos de $10000 o mas",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/b7dddda206411f94c4b3c6527e5bd6666c6d1701"
     },
     "stats": {
       "total": 12,
@@ -471,6 +471,25 @@
     },
     "coverage": 57.14,
     "test_count": 17,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T19:03:54.000Z",
+      "message": "refactor: estructurar descuentos por monto en arreglo de rangos estaticos",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 22,
+      "deletions": 0,
+      "date": "2026-09-09"
+    },
+    "coverage": 43.75,
+    "test_count": 18,
     "failed_tests": 0,
     "conclusion": "success"
   }
