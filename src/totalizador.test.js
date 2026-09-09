@@ -11,4 +11,9 @@ describe("Ciclo 1: Neto y Entrada", () => {
   it("deberia calcular el precio neto con precision de dos decimales", () => {
     expect(Totalizador.calcularPrecioNeto(2.5, 3.5)).toBe(8.75);
   });
+  it("deberia lanzar error si la cantidad es vacia, cero o negativa", () => {
+    expect(() => Totalizador.validarCantidad("")).toThrow("Ingresa una cantidad válida mayor a cero");
+    expect(() => Totalizador.validarCantidad(0)).toThrow("Ingresa una cantidad válida mayor a cero");
+    expect(() => Totalizador.validarCantidad(-5)).toThrow("Ingresa una cantidad válida mayor a cero");
+  });
 });

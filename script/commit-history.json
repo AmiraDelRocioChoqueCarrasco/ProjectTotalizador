@@ -76,12 +76,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "caae9ab54467afc202a06ddfbfd3cb0c7e5315e2",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T15:57:08.000Z",
       "message": "feat: soportar calculo de precio neto con decimales y redondeo",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/caae9ab54467afc202a06ddfbfd3cb0c7e5315e2"
     },
     "stats": {
       "total": 6,
@@ -91,6 +91,25 @@
     },
     "coverage": 100,
     "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T15:59:01.000Z",
+      "message": "fix: agregar validacion para cantidad vacia, cero o negativa",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 12,
+      "deletions": 0,
+      "date": "2026-09-09"
+    },
+    "coverage": 83.33,
+    "test_count": 4,
     "failed_tests": 0,
     "conclusion": "success"
   }
