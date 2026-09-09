@@ -720,7 +720,7 @@
     "testId": 32
   },
   {
-    "commitId": "HEAD",
+    "commitId": "04e27ffa8703f74d05e5456688b0355e19b27c74",
     "commitName": "feat: agregar impuesto adicional del 7% para Bebidas alcoholicas",
     "commitTimestamp": 1788982591185,
     "testId": 32
@@ -746,5 +746,35 @@
     "commitName": "feat: agregar descuento adicional del 1.5% para Material de escritorio",
     "commitTimestamp": 1788982637673,
     "testId": 33
+  },
+  {
+    "numPassedTests": 23,
+    "failedTests": 0,
+    "numTotalTests": 23,
+    "timestamp": 1788982649232,
+    "success": true,
+    "testId": 34
+  },
+  {
+    "numPassedTests": 23,
+    "failedTests": 1,
+    "numTotalTests": 24,
+    "timestamp": 1788982799689,
+    "success": false,
+    "testId": 34
+  },
+  {
+    "numPassedTests": 24,
+    "failedTests": 0,
+    "numTotalTests": 24,
+    "timestamp": 1788982828800,
+    "success": true,
+    "testId": 34
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar impuesto adicional del 3% para Muebles",
+    "commitTimestamp": 1788982844467,
+    "testId": 34
   }
 ]

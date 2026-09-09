@@ -608,12 +608,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "04e27ffa8703f74d05e5456688b0355e19b27c74",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T19:37:16.000Z",
       "message": "feat: agregar descuento adicional del 1.5% para Material de escritorio",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/04e27ffa8703f74d05e5456688b0355e19b27c74"
     },
     "stats": {
       "total": 11,
@@ -623,6 +623,25 @@
     },
     "coverage": 84.21,
     "test_count": 23,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T19:40:43.000Z",
+      "message": "feat: agregar impuesto adicional del 3% para Muebles",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2026-09-09"
+    },
+    "coverage": 77.27,
+    "test_count": 24,
     "failed_tests": 0,
     "conclusion": "success"
   }

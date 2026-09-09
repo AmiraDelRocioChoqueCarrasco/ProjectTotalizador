@@ -85,4 +85,11 @@ export class Totalizador {
     if (cat === "Material de escritorio") return 0.015;
     return 0;
   }
+
+  static obtenerImpuestoCategoria(categoria) {
+    const cat = this.obtenerCategoria(categoria);
+    if (cat === "Bebidas alcohólicas") return 0.07;
+    if (cat === "Muebles") return 0.03;
+    return 0;
+  }
 }
