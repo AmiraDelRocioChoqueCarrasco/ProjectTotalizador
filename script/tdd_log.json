@@ -872,7 +872,7 @@
     "testId": 36
   },
   {
-    "commitId": "HEAD",
+    "commitId": "70ecb618dee9db2f0a9f03e84e2fa1b6e6c374de",
     "commitName": "refactor: estructurar reglas de categoria en diccionario estatico unificado",
     "commitTimestamp": 1788983210151,
     "testId": 36
@@ -906,5 +906,11 @@
     "commitName": "feat: refactorizacion de codigo",
     "commitTimestamp": 1788983315654,
     "testId": 37
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: implementar de index.html",
+    "commitTimestamp": 1788983417082,
+    "testId": 38
   }
 ]
