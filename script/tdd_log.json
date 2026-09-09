@@ -974,7 +974,7 @@
     "testId": 41
   },
   {
-    "commitId": "HEAD",
+    "commitId": "d6c3c1b97ac3b972b44fc1c843c74a8cad5ec79c",
     "commitName": "feat: calcular tarifas de envío por unidad según peso volumétrico",
     "commitTimestamp": 1788984177252,
     "testId": 41
@@ -1008,5 +1008,19 @@
     "commitName": "feat: calcular costo total de envío según tarifa y cantidad de items",
     "commitTimestamp": 1788984334880,
     "testId": 42
+  },
+  {
+    "numPassedTests": 23,
+    "failedTests": 0,
+    "numTotalTests": 23,
+    "timestamp": 1788984414451,
+    "success": true,
+    "testId": 43
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: codigo refactorizado",
+    "commitTimestamp": 1788984431341,
+    "testId": 43
   }
 ]

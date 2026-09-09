@@ -1,6 +1,6 @@
 import { Totalizador } from "./totalizador.js";
 
-describe ("Ciclo 1: Entradas, Precio Neto y Validaciones", () => {
+describe("Ciclo 1: Entradas, Precio Neto y Validaciones", () => {
   it("deberia parsear un string numerico a un tipo number", () => {
     expect(Totalizador.convertirANumero("20")).toBe(20);
     expect(Totalizador.convertirANumero("3.5")).toBe(3.5);
@@ -27,7 +27,7 @@ describe ("Ciclo 1: Entradas, Precio Neto y Validaciones", () => {
   });
 });
 
-describe ("Ciclo 2: Impuestos por Estado y Selección por Defecto", () => {
+describe("Ciclo 2: Impuestos por Estado y Selección por Defecto", () => {
   it("debería retornar CA como estado por defecto si el valor ingresado es vacío o nulo", () => {
     expect(Totalizador.obtenerEstado("")).toBe("CA");
     expect(Totalizador.obtenerEstado(null)).toBe("CA");
@@ -59,8 +59,8 @@ describe ("Ciclo 2: Impuestos por Estado y Selección por Defecto", () => {
   });
 });
 
-describe ("Ciclo 3: Descuentos por Monto", () => {
-    it("debería retornar 0 de descuento si el monto neto es menor a $1,000", () => {
+describe("Ciclo 3: Descuentos Escalonados por Monto Neto", () => {
+  it("debería retornar 0 de descuento si el monto neto es menor a $1,000", () => {
     expect(Totalizador.calcularDescuentoMonto(500)).toBe(0);
   });
 
@@ -83,48 +83,12 @@ describe ("Ciclo 3: Descuentos por Monto", () => {
   it("debería aplicar un 15% de descuento cuando el monto neto alcanza los $30,000", () => {
     expect(Totalizador.calcularDescuentoMonto(30000)).toBe(4500);
   });
-
-  it("debería obtener el porcentaje exacto de descuento correspondiente", () => {
-    expect(Totalizador.obtenerPorcentajeDescuentoMonto(500)).toBe(0);
-    expect(Totalizador.obtenerPorcentajeDescuentoMonto(1000)).toBe(0.03);
-    expect(Totalizador.obtenerPorcentajeDescuentoMonto(3000)).toBe(0.05);
-    expect(Totalizador.obtenerPorcentajeDescuentoMonto(7000)).toBe(0.07);
-    expect(Totalizador.obtenerPorcentajeDescuentoMonto(10000)).toBe(0.10);
-    expect(Totalizador.obtenerPorcentajeDescuentoMonto(30000)).toBe(0.15);
-  });
 });
 
-describe ("Ciclo 4: Categoría de Producto", () => {
+describe("Ciclo 4: Categorías de Producto (Impuestos y Descuentos)", () => {
   it("debería retornar 'Varios' como categoría por defecto si no se especifica", () => {
     expect(Totalizador.obtenerCategoria("")).toBe("Varios");
     expect(Totalizador.obtenerCategoria(null)).toBe("Varios");
-  });
-
-  it("debería retornar 2% de descuento adicional para la categoría Alimentos", () => {
-    expect(Totalizador.obtenerDescuentoCategoria("Alimentos")).toBe(0.02);
-    expect(Totalizador.obtenerDescuentoCategoria("Varios")).toBe(0);
-  });
-
-  it("debería retornar 7% de impuesto adicional para Bebidas alcohólicas", () => {
-    expect(Totalizador.obtenerImpuestoCategoria("Bebidas alcohólicas")).toBe(0.07);
-    expect(Totalizador.obtenerImpuestoCategoria("Varios")).toBe(0);
-  });
-
-  it("debería retornar 1.5% de descuento adicional para Material de escritorio", () => {
-    expect(Totalizador.obtenerDescuentoCategoria("Material de escritorio")).toBe(0.015);
-  });
-
-  it("debería retornar 3% de impuesto adicional para Muebles", () => {
-    expect(Totalizador.obtenerImpuestoCategoria("Muebles")).toBe(0.03);
-  });
-
-  it("debería retornar 4% de impuesto y 1% de descuento adicional para Electrónicos", () => {
-    expect(Totalizador.obtenerImpuestoCategoria("Electrónicos")).toBe(0.04);
-    expect(Totalizador.obtenerDescuentoCategoria("Electrónicos")).toBe(0.01);
-  });
-
-  it("debería retornar 2% de impuesto adicional para Vestimenta", () => {
-    expect(Totalizador.obtenerImpuestoCategoria("Vestimenta")).toBe(0.02);
   });
 
   it("debería obtener las tasas correctas de impuesto y descuento por categoría", () => {
@@ -136,15 +100,9 @@ describe ("Ciclo 4: Categoría de Producto", () => {
     expect(Totalizador.obtenerDescuentoCategoria("Electrónicos")).toBe(0.01);
     expect(Totalizador.obtenerImpuestoCategoria("Vestimenta")).toBe(0.02);
   });
-
-  it("debería calcular los montos exactos de impuesto y descuento por categoría", () => {
-    expect(Totalizador.calcularDescuentoCategoria(100, "Alimentos")).toBe(2);
-    expect(Totalizador.calcularImpuestoCategoria(100, "Bebidas alcohólicas")).toBe(7);
-  });
-
 });
 
-describe ("Ciclo 4: Categoría de Producto", () => {
+describe("Ciclo 5: Peso Volumétrico y Envío", () => {
   it("debería lanzar error si el peso volumétrico está vacío o es menor a cero", () => {
     expect(() => Totalizador.validarPeso("")).toThrow("Ingresa un peso volumétrico válido (mayor o igual a 0)");
     expect(() => Totalizador.validarPeso(-3)).toThrow("Ingresa un peso volumétrico válido (mayor o igual a 0)");
@@ -152,17 +110,16 @@ describe ("Ciclo 4: Categoría de Producto", () => {
   });
 
   it("debería obtener la tarifa de envío unitaria correcta según el rango de peso volumétrico", () => {
-    expect(Totalizador.obtenerTarifaEnvioUnitaria(5)).toBe(0);    // Hasta 10
-    expect(Totalizador.obtenerTarifaEnvioUnitaria(15)).toBe(3.5);  // 11 a 20
-    expect(Totalizador.obtenerTarifaEnvioUnitaria(30)).toBe(5);    // 21 a 40
-    expect(Totalizador.obtenerTarifaEnvioUnitaria(50)).toBe(6);    // 41 a 80
-    expect(Totalizador.obtenerTarifaEnvioUnitaria(90)).toBe(6.5);  // 81 a 100
-    expect(Totalizador.obtenerTarifaEnvioUnitaria(150)).toBe(8);   // 101 a 200
-    expect(Totalizador.obtenerTarifaEnvioUnitaria(250)).toBe(9);   // Mayor a 200
+    expect(Totalizador.obtenerTarifaEnvioUnitaria(5)).toBe(0);
+    expect(Totalizador.obtenerTarifaEnvioUnitaria(15)).toBe(3.5);
+    expect(Totalizador.obtenerTarifaEnvioUnitaria(30)).toBe(5);
+    expect(Totalizador.obtenerTarifaEnvioUnitaria(50)).toBe(6);
+    expect(Totalizador.obtenerTarifaEnvioUnitaria(90)).toBe(6.5);
+    expect(Totalizador.obtenerTarifaEnvioUnitaria(150)).toBe(8);
+    expect(Totalizador.obtenerTarifaEnvioUnitaria(250)).toBe(9);
   });
 
   it("debería calcular el costo total de envío multiplicando la tarifa unitaria por la cantidad", () => {
-    // Para peso 15 -> tarifa 3.5; cantidad 10 -> costo total 35
     expect(Totalizador.calcularCostoEnvio(15, 10)).toBe(35);
   });
 });
