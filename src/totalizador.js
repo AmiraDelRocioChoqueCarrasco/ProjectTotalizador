@@ -1,4 +1,5 @@
 export class Totalizador {
+  ///ciclo 1
   static convertirANumero(valor) {
     return Number(valor);
   }
@@ -21,5 +22,10 @@ export class Totalizador {
 
   static calcularPrecioNeto(cantidad, precio) {
     return Math.round(cantidad * precio * 100) / 100;
+  }
+
+  ///ciclo 2
+  static obtenerEstado(estado) {
+    return estado ? estado.toUpperCase() : "CA";
   }
 }

@@ -190,7 +190,7 @@
     "testId": 8
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e250a66115ea2139f36ca3c38e455798a4a9b5bd",
     "commitName": "fix: implementacion de index.html",
     "commitTimestamp": 1788969885513,
     "testId": 9
@@ -200,5 +200,27 @@
     "commitName": "feat: integrar interfaz de usuario con validaciones y cancelacion de compra",
     "commitTimestamp": 1788969941280,
     "testId": 10
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 1,
+    "numTotalTests": 6,
+    "timestamp": 1788970089196,
+    "success": false,
+    "testId": 11
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 0,
+    "numTotalTests": 6,
+    "timestamp": 1788970132693,
+    "success": true,
+    "testId": 11
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: retornar estado CA por defecto si no se especifica uno",
+    "commitTimestamp": 1788970147933,
+    "testId": 11
   }
 ]

@@ -26,3 +26,10 @@ describe("Ciclo 1: Entradas, Precio Neto y Validaciones", () => {
     expect(() => Totalizador.validarPrecio(-10)).toThrow("Ingresa un precio válido mayor a cero");
   });
 });
+describe("Ciclo 2: Impuestos por Estado", () => {
+it("debería retornar CA como estado por defecto si el valor ingresado es vacío o nulo", () => {
+    expect(Totalizador.obtenerEstado("")).toBe("CA");
+    expect(Totalizador.obtenerEstado(null)).toBe("CA");
+  });
+
+});

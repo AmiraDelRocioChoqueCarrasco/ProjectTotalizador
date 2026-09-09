@@ -171,12 +171,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e250a66115ea2139f36ca3c38e455798a4a9b5bd",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T16:05:40.000Z",
       "message": "feat: integrar interfaz de usuario con validaciones y cancelacion de compra",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/e250a66115ea2139f36ca3c38e455798a4a9b5bd"
     },
     "stats": {
       "total": 25,
@@ -186,6 +186,25 @@
     },
     "coverage": 80,
     "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T16:09:06.000Z",
+      "message": "feat: retornar estado CA por defecto si no se especifica uno",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 13,
+      "deletions": 0,
+      "date": "2026-09-09"
+    },
+    "coverage": 81.82,
+    "test_count": 6,
     "failed_tests": 0,
     "conclusion": "success"
   }
