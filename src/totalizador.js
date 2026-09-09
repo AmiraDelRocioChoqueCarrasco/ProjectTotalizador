@@ -124,4 +124,8 @@ export class Totalizador {
     const tarifaUnitaria = this.obtenerTarifaEnvioUnitaria(peso);
     return Math.round(tarifaUnitaria * cantidad * 100) / 100;
   }
+
+  static obtenerTipoCliente(tipo) {
+    return tipo ? tipo : "Normal";
+  }
 }

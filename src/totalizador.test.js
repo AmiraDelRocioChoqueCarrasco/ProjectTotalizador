@@ -123,3 +123,10 @@ describe("Ciclo 5: Peso Volumétrico y Envío", () => {
     expect(Totalizador.calcularCostoEnvio(15, 10)).toBe(35);
   });
 });
+
+describe ("Ciclo 6: Tipo de Cliente y Fijos", () => {
+    it("debería retornar 'Normal' como tipo de cliente por defecto si no se especifica", () => {
+    expect(Totalizador.obtenerTipoCliente("")).toBe("Normal");
+    expect(Totalizador.obtenerTipoCliente(null)).toBe("Normal");
+  });
+});

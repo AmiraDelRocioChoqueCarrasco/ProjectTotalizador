@@ -1024,7 +1024,7 @@
     "testId": 43
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e4b644663954f1482f3bd8998ea8ab40f1b0ed2d",
     "commitName": "feat: refactorizacion del codigo de funcionamiento",
     "commitTimestamp": 1788984544104,
     "testId": 44
@@ -1034,5 +1034,27 @@
     "commitName": "feat: renderizar costo de envio basado en peso volumetrico en UI",
     "commitTimestamp": 1788984881797,
     "testId": 45
+  },
+  {
+    "numPassedTests": 23,
+    "failedTests": 1,
+    "numTotalTests": 24,
+    "timestamp": 1788985139389,
+    "success": false,
+    "testId": 46
+  },
+  {
+    "numPassedTests": 24,
+    "failedTests": 0,
+    "numTotalTests": 24,
+    "timestamp": 1788985193176,
+    "success": true,
+    "testId": 46
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: asignar Normal como tipo de cliente por defecto",
+    "commitTimestamp": 1788990283495,
+    "testId": 46
   }
 ]
