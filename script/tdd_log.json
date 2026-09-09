@@ -196,7 +196,7 @@
     "testId": 9
   },
   {
-    "commitId": "HEAD",
+    "commitId": "48bb5ceac663bd3792923bc873f4855132115d3e",
     "commitName": "feat: integrar interfaz de usuario con validaciones y cancelacion de compra",
     "commitTimestamp": 1788969941280,
     "testId": 10
@@ -222,5 +222,35 @@
     "commitName": "feat: retornar estado CA por defecto si no se especifica uno",
     "commitTimestamp": 1788970147933,
     "testId": 11
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 0,
+    "numTotalTests": 6,
+    "timestamp": 1788970170649,
+    "success": true,
+    "testId": 12
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 1,
+    "numTotalTests": 7,
+    "timestamp": 1788970200507,
+    "success": false,
+    "testId": 12
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 0,
+    "numTotalTests": 7,
+    "timestamp": 1788970220085,
+    "success": true,
+    "testId": 12
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar calculo de impuesto del 8.25% para estado CA",
+    "commitTimestamp": 1788970234227,
+    "testId": 12
   }
 ]

@@ -190,12 +190,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "48bb5ceac663bd3792923bc873f4855132115d3e",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T16:09:06.000Z",
       "message": "feat: retornar estado CA por defecto si no se especifica uno",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/48bb5ceac663bd3792923bc873f4855132115d3e"
     },
     "stats": {
       "total": 13,
@@ -205,6 +205,25 @@
     },
     "coverage": 81.82,
     "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T16:10:33.000Z",
+      "message": "feat: agregar calculo de impuesto del 8.25% para estado CA",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 12,
+      "deletions": 1,
+      "date": "2026-09-09"
+    },
+    "coverage": 80,
+    "test_count": 7,
     "failed_tests": 0,
     "conclusion": "success"
   }
