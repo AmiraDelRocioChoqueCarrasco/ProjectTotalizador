@@ -47,4 +47,11 @@ export class Totalizador {
   static calcularDescuentoMonto(precioNeto) {
     return 0;
   }
+  
+  static calcularDescuentoMonto(precioNeto) {
+    if (precioNeto >= 1000) {
+      return Math.round(precioNeto * 0.03 * 100) / 100;
+    }
+    return 0;
+  }
 }

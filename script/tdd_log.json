@@ -408,7 +408,7 @@
     "testId": 19
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f130b02496a15cc83eb63dc1f14abbeee194cae3",
     "commitName": "feat: implementacion de presenter.js",
     "commitTimestamp": 1788979352862,
     "testId": 20
@@ -434,5 +434,27 @@
     "commitName": "feat: retornar 0 de descuento para compras menores a $1000",
     "commitTimestamp": 1788979700424,
     "testId": 21
+  },
+  {
+    "numPassedTests": 13,
+    "failedTests": 1,
+    "numTotalTests": 14,
+    "timestamp": 1788979807279,
+    "success": false,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 14,
+    "failedTests": 0,
+    "numTotalTests": 14,
+    "timestamp": 1788979841700,
+    "success": true,
+    "testId": 22
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: aplicar 3% de descuento para montos de $1000 o mas",
+    "commitTimestamp": 1788979865984,
+    "testId": 22
   }
 ]

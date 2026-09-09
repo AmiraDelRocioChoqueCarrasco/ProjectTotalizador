@@ -380,12 +380,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f130b02496a15cc83eb63dc1f14abbeee194cae3",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T18:48:19.000Z",
       "message": "feat: retornar 0 de descuento para compras menores a $1000",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/f130b02496a15cc83eb63dc1f14abbeee194cae3"
     },
     "stats": {
       "total": 10,
@@ -395,6 +395,25 @@
     },
     "coverage": 88.89,
     "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T18:51:04.000Z",
+      "message": "feat: aplicar 3% de descuento para montos de $1000 o mas",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2026-09-09"
+    },
+    "coverage": 85.71,
+    "test_count": 14,
     "failed_tests": 0,
     "conclusion": "success"
   }
