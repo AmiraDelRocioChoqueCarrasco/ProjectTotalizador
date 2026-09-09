@@ -218,7 +218,7 @@
     "testId": 11
   },
   {
-    "commitId": "HEAD",
+    "commitId": "910b83a61575e7b8a64626d23b7b14f8bb79d8b8",
     "commitName": "feat: retornar estado CA por defecto si no se especifica uno",
     "commitTimestamp": 1788970147933,
     "testId": 11
@@ -252,5 +252,27 @@
     "commitName": "feat: agregar calculo de impuesto del 8.25% para estado CA",
     "commitTimestamp": 1788970234227,
     "testId": 12
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 1,
+    "numTotalTests": 8,
+    "timestamp": 1788970291075,
+    "success": false,
+    "testId": 13
+  },
+  {
+    "numPassedTests": 8,
+    "failedTests": 0,
+    "numTotalTests": 8,
+    "timestamp": 1788970314270,
+    "success": true,
+    "testId": 13
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar calculo de impuesto del 4.00% para estado AL",
+    "commitTimestamp": 1788970323255,
+    "testId": 13
   }
 ]

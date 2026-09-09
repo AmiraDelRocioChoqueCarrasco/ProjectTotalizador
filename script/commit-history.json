@@ -209,12 +209,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "910b83a61575e7b8a64626d23b7b14f8bb79d8b8",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T16:10:33.000Z",
       "message": "feat: agregar calculo de impuesto del 8.25% para estado CA",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/910b83a61575e7b8a64626d23b7b14f8bb79d8b8"
     },
     "stats": {
       "total": 13,
@@ -224,6 +224,25 @@
     },
     "coverage": 80,
     "test_count": 7,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T16:12:02.000Z",
+      "message": "feat: agregar calculo de impuesto del 4.00% para estado AL",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 10,
+      "deletions": 1,
+      "date": "2026-09-09"
+    },
+    "coverage": 66.67,
+    "test_count": 8,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -34,5 +34,8 @@ describe("Ciclo 2: Impuestos por Estado", () => {
   it("debería calcular el impuesto para California (8.25%) sobre un precio neto", () => {
     expect(Totalizador.calcularImpuestoEstado(100, "CA")).toBe(8.25);
   });
+  it("debería calcular el impuesto para Alabama (4.00%) sobre un precio neto", () => {
+    expect(Totalizador.calcularImpuestoEstado(100, "AL")).toBe(4.00);
+  });
 
 });

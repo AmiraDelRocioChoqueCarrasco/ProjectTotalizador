@@ -28,12 +28,18 @@ export class Totalizador {
   static obtenerEstado(estado) {
     return estado ? estado.toUpperCase() : "CA";
   }
-  
+
   static calcularImpuestoEstado(precioNeto, estado) {
     const est = this.obtenerEstado(estado);
     if (est === "CA") {
       return Math.round(precioNeto * 0.0825 * 100) / 100;
     }
+    return 0;
+  }
+  static calcularImpuestoEstado(precioNeto, estado) {
+    const est = this.obtenerEstado(estado);
+    if (est === "CA") return Math.round(precioNeto * 0.0825 * 100) / 100;
+    if (est === "AL") return Math.round(precioNeto * 0.0400 * 100) / 100;
     return 0;
   }
 }
