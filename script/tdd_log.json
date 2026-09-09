@@ -1018,7 +1018,7 @@
     "testId": 43
   },
   {
-    "commitId": "HEAD",
+    "commitId": "7afd1a8fba911f1a1f8b4e23ddb41e21f411f351",
     "commitName": "feat: codigo refactorizado",
     "commitTimestamp": 1788984431341,
     "testId": 43
@@ -1028,5 +1028,11 @@
     "commitName": "feat: refactorizacion del codigo de funcionamiento",
     "commitTimestamp": 1788984544104,
     "testId": 44
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: renderizar costo de envio basado en peso volumetrico en UI",
+    "commitTimestamp": 1788984881797,
+    "testId": 45
   }
 ]

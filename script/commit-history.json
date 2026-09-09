@@ -817,17 +817,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "7afd1a8fba911f1a1f8b4e23ddb41e21f411f351",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T20:09:03.000Z",
       "message": "feat: refactorizacion del codigo de funcionamiento",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/7afd1a8fba911f1a1f8b4e23ddb41e21f411f351"
     },
     "stats": {
       "total": 37,
       "additions": 18,
       "deletions": 19,
+      "date": "2026-09-09"
+    },
+    "coverage": 86.67,
+    "test_count": 23,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T20:14:40.000Z",
+      "message": "feat: renderizar costo de envio basado en peso volumetrico en UI",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 8,
+      "deletions": 0,
       "date": "2026-09-09"
     },
     "coverage": 86.67,
