@@ -1184,7 +1184,7 @@
     "testId": 52
   },
   {
-    "commitId": "HEAD",
+    "commitId": "bc90f8a7411e746271b7b5715c7dbebe9dbac0c2",
     "commitName": "feat: calcular total final consolidando todos los descuentos e impuestos",
     "commitTimestamp": 1788994035290,
     "testId": 52
@@ -1194,5 +1194,43 @@
     "commitName": "feat: integrar tipo de cliente y total final en la vista principal",
     "commitTimestamp": 1788994145940,
     "testId": 53
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 0,
+    "numTotalTests": 30,
+    "timestamp": 1788994679241,
+    "success": true,
+    "testId": 54
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 0,
+    "numTotalTests": 30,
+    "timestamp": 1788994850485,
+    "success": true,
+    "testId": 54
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 1,
+    "numTotalTests": 31,
+    "timestamp": 1788994900024,
+    "success": false,
+    "testId": 54
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 0,
+    "numTotalTests": 31,
+    "timestamp": 1788994920899,
+    "success": true,
+    "testId": 54
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: aplicar regla de envio gratis por monto o cliente especial",
+    "commitTimestamp": 1788994932697,
+    "testId": 54
   }
 ]

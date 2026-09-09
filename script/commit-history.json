@@ -988,12 +988,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "bc90f8a7411e746271b7b5715c7dbebe9dbac0c2",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T22:49:04.000Z",
       "message": "feat: integrar tipo de cliente y total final en la vista principal",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/bc90f8a7411e746271b7b5715c7dbebe9dbac0c2"
     },
     "stats": {
       "total": 27,
@@ -1003,6 +1003,25 @@
     },
     "coverage": 88.89,
     "test_count": 29,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T23:02:11.000Z",
+      "message": "feat: aplicar regla de envio gratis por monto o cliente especial",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 17,
+      "deletions": 1,
+      "date": "2026-09-09"
+    },
+    "coverage": 89.09,
+    "test_count": 31,
     "failed_tests": 0,
     "conclusion": "success"
   }

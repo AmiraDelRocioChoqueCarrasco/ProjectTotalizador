@@ -167,4 +167,16 @@ describe ("Ciclo 6: Tipo de Cliente y Fijos", () => {
     });
     expect(total).toBe(1021);
   });
+
+  it("debería calcular el descuento por cliente sobre el precio neto", () => {
+  expect(Totalizador.calcularDescuentoCliente(2000, "Especial")).toBe(30);
+});
+});
+
+describe ("Ciclo 7: Reglas Especiales y Promociones de Envío", () => {
+    it("debería retornar envío 0 si el monto neto >= 3000 o si el cliente es Especial", () => {
+    expect(Totalizador.esEnvioGratis(3000, "Normal")).toBe(true);
+    expect(Totalizador.esEnvioGratis(500, "Especial")).toBe(true);
+    expect(Totalizador.esEnvioGratis(500, "Normal")).toBe(false);
+    });
 });

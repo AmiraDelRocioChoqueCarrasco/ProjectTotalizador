@@ -151,4 +151,8 @@ export class Totalizador {
     const total = neto - descMonto - descCat - descCliente + impEstado + impCat + costoEnvio;
     return Math.round(total * 100) / 100;
   }
+
+  static esEnvioGratis(precioNeto, cliente) {
+  return precioNeto >= 3000 || this.obtenerTipoCliente(cliente) === "Especial";
+}
 }
