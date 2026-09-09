@@ -893,12 +893,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "93f464787148c83f69b5e30cd31c1e5a3e35fefc",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T22:39:36.000Z",
       "message": "feat: agregar 1% de descuento para cliente Frecuente",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/93f464787148c83f69b5e30cd31c1e5a3e35fefc"
     },
     "stats": {
       "total": 10,
@@ -908,6 +908,25 @@
     },
     "coverage": 80.36,
     "test_count": 26,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T22:40:49.000Z",
+      "message": "feat: agregar 1.5% de descuento para cliente Especial",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 13,
+      "deletions": 1,
+      "date": "2026-09-09"
+    },
+    "coverage": 73.44,
+    "test_count": 27,
     "failed_tests": 0,
     "conclusion": "success"
   }
