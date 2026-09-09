@@ -13,4 +13,11 @@ export class Totalizador {
     }
     return cantidad;
   }
+  static validarPrecio(valor) {
+    const precio = this.convertirANumero(valor);
+    if (!valor || isNaN(precio) || precio <= 0) {
+      throw new Error("Ingresa un precio válido mayor a cero");
+    }
+    return precio;
+  }
 }

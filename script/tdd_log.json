@@ -94,7 +94,7 @@
     "testId": 5
   },
   {
-    "commitId": "HEAD",
+    "commitId": "69f8e072dac87cd7d366ff5e0627b1104643f830",
     "commitName": "feat: soportar calculo de precio neto con decimales y redondeo",
     "commitTimestamp": 1788969429699,
     "testId": 5
@@ -136,5 +136,27 @@
     "commitName": "fix: agregar validacion para cantidad vacia, cero o negativa",
     "commitTimestamp": 1788969542040,
     "testId": 6
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 1,
+    "numTotalTests": 5,
+    "timestamp": 1788969672511,
+    "success": false,
+    "testId": 7
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1788969689541,
+    "success": true,
+    "testId": 7
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: agregar validacion para precio vacio, cero o negativo",
+    "commitTimestamp": 1788969703119,
+    "testId": 7
   }
 ]

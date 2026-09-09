@@ -16,4 +16,9 @@ describe("Ciclo 1: Neto y Entrada", () => {
     expect(() => Totalizador.validarCantidad(0)).toThrow("Ingresa una cantidad válida mayor a cero");
     expect(() => Totalizador.validarCantidad(-5)).toThrow("Ingresa una cantidad válida mayor a cero");
   });
+  it("deberia lanzar error si el precio es vacio, cero o negativo", () => {
+    expect(() => Totalizador.validarPrecio("")).toThrow("Ingresa un precio válido mayor a cero");
+    expect(() => Totalizador.validarPrecio(0)).toThrow("Ingresa un precio válido mayor a cero");
+    expect(() => Totalizador.validarPrecio(-10)).toThrow("Ingresa un precio válido mayor a cero");
+  });
 });
