@@ -160,4 +160,9 @@ describe ("Ciclo 4: Categoría de Producto", () => {
     expect(Totalizador.obtenerTarifaEnvioUnitaria(150)).toBe(8);   // 101 a 200
     expect(Totalizador.obtenerTarifaEnvioUnitaria(250)).toBe(9);   // Mayor a 200
   });
+
+  it("debería calcular el costo total de envío multiplicando la tarifa unitaria por la cantidad", () => {
+    // Para peso 15 -> tarifa 3.5; cantidad 10 -> costo total 35
+    expect(Totalizador.calcularCostoEnvio(15, 10)).toBe(35);
+  });
 });

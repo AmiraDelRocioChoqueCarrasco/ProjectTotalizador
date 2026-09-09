@@ -760,12 +760,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1f2b7237c493ff3b9094d218b08cc559dd4f66e7",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T20:02:56.000Z",
       "message": "feat: calcular tarifas de envío por unidad según peso volumétrico",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/1f2b7237c493ff3b9094d218b08cc559dd4f66e7"
     },
     "stats": {
       "total": 24,
@@ -775,6 +775,25 @@
     },
     "coverage": 95.35,
     "test_count": 30,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T20:05:34.000Z",
+      "message": "feat: calcular costo total de envío según tarifa y cantidad de items",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 10,
+      "deletions": 0,
+      "date": "2026-09-09"
+    },
+    "coverage": 95.56,
+    "test_count": 31,
     "failed_tests": 0,
     "conclusion": "success"
   }

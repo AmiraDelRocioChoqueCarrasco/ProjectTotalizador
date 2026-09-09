@@ -119,5 +119,10 @@ export class Totalizador {
     const rango = this.TARIFAS_ENVIO.find((r) => peso <= r.max);
     return rango ? rango.tarifa : 9;
   }
+
+  static calcularCostoEnvio(peso, cantidad) {
+    const tarifaUnitaria = this.obtenerTarifaEnvioUnitaria(peso);
+    return Math.round(tarifaUnitaria * cantidad * 100) / 100;
+  }
 }
 

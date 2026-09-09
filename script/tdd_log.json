@@ -944,7 +944,7 @@
     "testId": 40
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1f2b7237c493ff3b9094d218b08cc559dd4f66e7",
     "commitName": "fix: agregar validación para peso volumétrico vacío o negativo",
     "commitTimestamp": 1788984071316,
     "testId": 40
@@ -978,5 +978,35 @@
     "commitName": "feat: calcular tarifas de envío por unidad según peso volumétrico",
     "commitTimestamp": 1788984177252,
     "testId": 41
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 0,
+    "numTotalTests": 30,
+    "timestamp": 1788984210288,
+    "success": true,
+    "testId": 42
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 1,
+    "numTotalTests": 31,
+    "timestamp": 1788984243407,
+    "success": false,
+    "testId": 42
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 0,
+    "numTotalTests": 31,
+    "timestamp": 1788984262099,
+    "success": true,
+    "testId": 42
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: calcular costo total de envío según tarifa y cantidad de items",
+    "commitTimestamp": 1788984334880,
+    "testId": 42
   }
 ]
