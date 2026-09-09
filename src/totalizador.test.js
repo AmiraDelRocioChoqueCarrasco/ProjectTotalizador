@@ -184,4 +184,24 @@ describe ("Ciclo 7: Reglas Especiales y Promociones de Envío", () => {
   // Para peso 15 (tarifa 3.5), 2 ítems -> envío base = 7. Con 50% desc = 3.5
   expect(Totalizador.calcularCostoEnvioAjustado(15, 2, 500, "Frecuente")).toBe(3.5);
 });
+it("debería calcular el Total Final sumando netos, impuestos y envío, restando todos los descuentos", () => {
+  const total = Totalizador.calcularTotalFinal({
+    neto: 1000,
+    descMonto: 30,
+    descCat: 20,
+    descCliente: 10,
+    impEstado: 82.5,
+    impCat: 0,
+    costoEnvio: 3.5
+  });
+  expect(total).toBe(1026);
+});
+
+it("debería generar un objeto con la liquidación completa del pedido", () => {
+  const res = Totalizador.generarLiquidacion({
+    cantidad: 2, precio: 500, peso: 15, estado: "CA", categoria: "Alimentos", cliente: "Recurrente"
+  });
+  expect(res.neto).toBe(1000);
+  expect(res.total).toBeGreaterThan(0);
+});
 });

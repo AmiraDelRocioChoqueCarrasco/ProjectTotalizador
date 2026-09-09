@@ -1228,7 +1228,7 @@
     "testId": 54
   },
   {
-    "commitId": "HEAD",
+    "commitId": "707feb1c3c3cb7f08d6012961a77cbb6a0be8dee",
     "commitName": "feat: aplicar regla de envio gratis por monto o cliente especial",
     "commitTimestamp": 1788994932697,
     "testId": 54
@@ -1254,5 +1254,35 @@
     "commitName": "feat: aplicar 50% de descuento en envio a cliente frecuente",
     "commitTimestamp": 1788995072521,
     "testId": 55
+  },
+  {
+    "numPassedTests": 33,
+    "failedTests": 0,
+    "numTotalTests": 33,
+    "timestamp": 1788995252178,
+    "success": true,
+    "testId": 56
+  },
+  {
+    "numPassedTests": 33,
+    "failedTests": 1,
+    "numTotalTests": 34,
+    "timestamp": 1788995309782,
+    "success": false,
+    "testId": 56
+  },
+  {
+    "numPassedTests": 34,
+    "failedTests": 0,
+    "numTotalTests": 34,
+    "timestamp": 1788995331633,
+    "success": true,
+    "testId": 56
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: consolidar objeto completo de liquidacion de ventas",
+    "commitTimestamp": 1788995351024,
+    "testId": 56
   }
 ]

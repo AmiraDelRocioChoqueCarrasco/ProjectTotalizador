@@ -1026,12 +1026,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "707feb1c3c3cb7f08d6012961a77cbb6a0be8dee",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T23:04:31.000Z",
       "message": "feat: aplicar 50% de descuento en envio a cliente frecuente",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/707feb1c3c3cb7f08d6012961a77cbb6a0be8dee"
     },
     "stats": {
       "total": 16,
@@ -1041,6 +1041,25 @@
     },
     "coverage": 86.89,
     "test_count": 32,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T23:09:09.000Z",
+      "message": "feat: consolidar objeto completo de liquidacion de ventas",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 40,
+      "additions": 40,
+      "deletions": 0,
+      "date": "2026-09-09"
+    },
+    "coverage": 98.68,
+    "test_count": 34,
     "failed_tests": 0,
     "conclusion": "success"
   }

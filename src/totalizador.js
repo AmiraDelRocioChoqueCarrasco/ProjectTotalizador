@@ -164,4 +164,24 @@ export class Totalizador {
   }
   return envioBase;
 }
+static generarLiquidacion({ cantidad, precio, peso, estado, categoria, cliente }) {
+  const qty = this.validarCantidad(cantidad);
+  const prc = this.validarPrecio(precio);
+  const pso = this.validarPeso(peso);
+  const est = this.obtenerEstado(estado);
+  const cat = this.obtenerCategoria(categoria);
+  const cli = this.obtenerTipoCliente(cliente);
+
+  const neto = this.calcularPrecioNeto(qty, prc);
+  const descMonto = this.calcularDescuentoMonto(neto);
+  const descCat = this.calcularDescuentoCategoria(neto, cat);
+  const descCliente = this.calcularDescuentoCliente(neto, cli);
+  const impEstado = this.calcularImpuestoEstado(neto, est);
+  const impCat = this.calcularImpuestoCategoria(neto, cat);
+  const costoEnvio = this.calcularCostoEnvioAjustado(pso, qty, neto, cli);
+
+  const total = this.calcularTotalFinal({ neto, descMonto, descCat, descCliente, impEstado, impCat, costoEnvio });
+
+  return { neto, descMonto, descCat, descCliente, impEstado, impCat, costoEnvio, total, est, cat, cli };
+}
 }
