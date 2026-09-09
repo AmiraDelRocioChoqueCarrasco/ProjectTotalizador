@@ -22,9 +22,37 @@
     "testId": 0
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5cbade3ae9f769d4cd3a6d4752fc6cd23b648221",
     "commitName": "feat: agregar soporte para calculo de precio neto con decimales",
     "commitTimestamp": 1788968422669,
     "testId": 1
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "Initial commit",
+    "commitTimestamp": 1788968534593,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 0,
+    "failedTests": 0,
+    "numTotalTests": 0,
+    "timestamp": 1788969171555,
+    "success": false,
+    "testId": 3
+  },
+  {
+    "numPassedTests": 1,
+    "failedTests": 0,
+    "numTotalTests": 1,
+    "timestamp": 1788969189555,
+    "success": true,
+    "testId": 3
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: parsear valores de entrada a tipo numerico",
+    "commitTimestamp": 1788969205755,
+    "testId": 3
   }
 ]
