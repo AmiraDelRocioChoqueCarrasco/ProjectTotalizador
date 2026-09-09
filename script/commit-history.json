@@ -285,12 +285,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8fdaf6bbd2e24b6f0a2e3761d321ef70fce4fe78",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T18:36:55.000Z",
       "message": "refactor: estructurar tasas de impuestos de estados en diccionario estatico",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/8fdaf6bbd2e24b6f0a2e3761d321ef70fce4fe78"
     },
     "stats": {
       "total": 16,
@@ -300,6 +300,25 @@
     },
     "coverage": 30.23,
     "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T18:37:56.000Z",
+      "message": "fix: lanzar error ante codigos de estado no reconocidos",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 12,
+      "deletions": 0,
+      "date": "2026-09-09"
+    },
+    "coverage": 31.25,
+    "test_count": 12,
     "failed_tests": 0,
     "conclusion": "success"
   }

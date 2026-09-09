@@ -322,7 +322,7 @@
     "testId": 15
   },
   {
-    "commitId": "HEAD",
+    "commitId": "8fdaf6bbd2e24b6f0a2e3761d321ef70fce4fe78",
     "commitName": "feat: agregar calculo de impuesto del 6.65% para estado UT",
     "commitTimestamp": 1788978932387,
     "testId": 15
@@ -364,5 +364,27 @@
     "commitName": "refactor: estructurar tasas de impuestos de estados en diccionario estatico",
     "commitTimestamp": 1788979016515,
     "testId": 16
+  },
+  {
+    "numPassedTests": 11,
+    "failedTests": 1,
+    "numTotalTests": 12,
+    "timestamp": 1788979046264,
+    "success": false,
+    "testId": 17
+  },
+  {
+    "numPassedTests": 12,
+    "failedTests": 0,
+    "numTotalTests": 12,
+    "timestamp": 1788979063683,
+    "success": true,
+    "testId": 17
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: lanzar error ante codigos de estado no reconocidos",
+    "commitTimestamp": 1788979077875,
+    "testId": 17
   }
 ]

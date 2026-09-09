@@ -46,4 +46,8 @@ describe("Ciclo 2: Impuestos por Estado", () => {
   it("debería calcular el impuesto para Texas (6.25%) sobre un precio neto", () => {
     expect(Totalizador.calcularImpuestoEstado(100, "TX")).toBe(6.25);
   });
+  it("debería lanzar un error si se ingresa un código de estado no válido", () => {
+    expect(() => Totalizador.calcularImpuestoEstado(100, "NY")).toThrow("Estado inválido seleccionado");
+    expect(() => Totalizador.calcularImpuestoEstado(100, "XYZ")).toThrow("Estado inválido seleccionado");
+  });
 });

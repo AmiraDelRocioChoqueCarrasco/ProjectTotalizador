@@ -70,4 +70,12 @@ export class Totalizador {
     const tasa = this.TASAS_IMPUESTOS[est] || 0;
     return Math.round(precioNeto * tasa * 100) / 100;
   }
+  static calcularImpuestoEstado(precioNeto, estado) {
+    const est = this.obtenerEstado(estado);
+    const tasa = this.TASAS_IMPUESTOS[est];
+    if (tasa === undefined) {
+      throw new Error("Estado inválido seleccionado");
+    }
+    return Math.round(precioNeto * tasa * 100) / 100;
+  }
 }
