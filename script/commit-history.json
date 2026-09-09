@@ -798,17 +798,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "792add6814a0cdb2475878a66323c37801a76bc9",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T20:07:10.000Z",
       "message": "feat: codigo refactorizado",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/792add6814a0cdb2475878a66323c37801a76bc9"
     },
     "stats": {
       "total": 69,
       "additions": 13,
       "deletions": 56,
+      "date": "2026-09-09"
+    },
+    "coverage": 86.67,
+    "test_count": 23,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T20:09:03.000Z",
+      "message": "feat: refactorizacion del codigo de funcionamiento",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 37,
+      "additions": 18,
+      "deletions": 19,
       "date": "2026-09-09"
     },
     "coverage": 86.67,

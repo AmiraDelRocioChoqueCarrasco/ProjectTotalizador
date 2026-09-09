@@ -25,6 +25,15 @@ export class Totalizador {
     Vestimenta: { impuesto: 0.02, descuento: 0 },
   };
 
+  static TARIFAS_ENVIO = [
+    { max: 10, tarifa: 0 },
+    { max: 20, tarifa: 3.5 },
+    { max: 40, tarifa: 5 },
+    { max: 80, tarifa: 6 },
+    { max: 100, tarifa: 6.5 },
+    { max: 200, tarifa: 8 },
+  ];
+
   static convertirANumero(valor) {
     return Number(valor);
   }
@@ -43,6 +52,14 @@ export class Totalizador {
       throw new Error("Ingresa un precio válido mayor a cero");
     }
     return precio;
+  }
+
+  static validarPeso(valor) {
+    const peso = this.convertirANumero(valor);
+    if (valor === "" || valor === null || isNaN(peso) || peso < 0) {
+      throw new Error("Ingresa un peso volumétrico válido (mayor o igual a 0)");
+    }
+    return peso;
   }
 
   static obtenerEstado(estado) {
@@ -98,23 +115,6 @@ export class Totalizador {
     return Math.round(precioNeto * tasa * 100) / 100;
   }
 
-  static validarPeso(valor) {
-    const peso = this.convertirANumero(valor);
-    if (valor === "" || valor === null || isNaN(peso) || peso < 0) {
-      throw new Error("Ingresa un peso volumétrico válido (mayor o igual a 0)");
-    }
-    return peso;
-  }
-
-  static TARIFAS_ENVIO = [
-    { max: 10, tarifa: 0 },
-    { max: 20, tarifa: 3.5 },
-    { max: 40, tarifa: 5 },
-    { max: 80, tarifa: 6 },
-    { max: 100, tarifa: 6.5 },
-    { max: 200, tarifa: 8 },
-  ];
-
   static obtenerTarifaEnvioUnitaria(peso) {
     const rango = this.TARIFAS_ENVIO.find((r) => peso <= r.max);
     return rango ? rango.tarifa : 9;
@@ -125,4 +125,3 @@ export class Totalizador {
     return Math.round(tarifaUnitaria * cantidad * 100) / 100;
   }
 }
-

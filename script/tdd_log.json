@@ -1004,7 +1004,7 @@
     "testId": 42
   },
   {
-    "commitId": "HEAD",
+    "commitId": "792add6814a0cdb2475878a66323c37801a76bc9",
     "commitName": "feat: calcular costo total de envío según tarifa y cantidad de items",
     "commitTimestamp": 1788984334880,
     "testId": 42
@@ -1022,5 +1022,11 @@
     "commitName": "feat: codigo refactorizado",
     "commitTimestamp": 1788984431341,
     "testId": 43
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: refactorizacion del codigo de funcionamiento",
+    "commitTimestamp": 1788984544104,
+    "testId": 44
   }
 ]
