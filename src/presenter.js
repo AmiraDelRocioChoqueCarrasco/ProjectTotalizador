@@ -16,6 +16,8 @@ form.addEventListener("submit", (event) => {
 
     const neto = Totalizador.calcularPrecioNeto(cantidad, precio);
     const impuesto = Totalizador.calcularImpuestoEstado(neto, estado);
+    const pctDescuento = Totalizador.obtenerPorcentajeDescuentoMonto(neto);
+    const montoDescuento = Totalizador.calcularDescuentoMonto(neto);
 
     resultadoDiv.innerHTML = `
       <p>Precio neto (${cantidad} * $${precio.toFixed(2)}): $${neto.toFixed(2)}</p>

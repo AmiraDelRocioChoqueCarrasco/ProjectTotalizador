@@ -602,7 +602,7 @@
     "testId": 27
   },
   {
-    "commitId": "HEAD",
+    "commitId": "3419fe170cbc24b4a52533ae568094ef7ed60d7a",
     "commitName": "feat: refactorizacion de la implementacion",
     "commitTimestamp": 1788980884940,
     "testId": 27
@@ -628,5 +628,11 @@
     "commitName": "feat: modificacion y ordenamiento de codigo de totalizador.js",
     "commitTimestamp": 1788980985019,
     "testId": 28
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: renderizar descuento por monto acumulado en el presentador de la vista",
+    "commitTimestamp": 1788981295176,
+    "testId": 29
   }
 ]

@@ -513,17 +513,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3419fe170cbc24b4a52533ae568094ef7ed60d7a",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T19:09:43.000Z",
       "message": "feat: modificacion y ordenamiento de codigo de totalizador.js",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/3419fe170cbc24b4a52533ae568094ef7ed60d7a"
     },
     "stats": {
       "total": 33,
       "additions": 17,
       "deletions": 16,
+      "date": "2026-09-09"
+    },
+    "coverage": 91.3,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T19:14:53.000Z",
+      "message": "feat: renderizar descuento por monto acumulado en el presentador de la vista",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 2,
+      "deletions": 0,
       "date": "2026-09-09"
     },
     "coverage": 91.3,
