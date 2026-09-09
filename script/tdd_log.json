@@ -430,7 +430,7 @@
     "testId": 21
   },
   {
-    "commitId": "HEAD",
+    "commitId": "075e6946d0b04038b93cda3cad0d7b73648564c7",
     "commitName": "feat: retornar 0 de descuento para compras menores a $1000",
     "commitTimestamp": 1788979700424,
     "testId": 21
@@ -456,5 +456,35 @@
     "commitName": "feat: aplicar 3% de descuento para montos de $1000 o mas",
     "commitTimestamp": 1788979865984,
     "testId": 22
+  },
+  {
+    "numPassedTests": 14,
+    "failedTests": 1,
+    "numTotalTests": 15,
+    "timestamp": 1788979927691,
+    "success": false,
+    "testId": 23
+  },
+  {
+    "numPassedTests": 15,
+    "failedTests": 0,
+    "numTotalTests": 15,
+    "timestamp": 1788979973220,
+    "success": true,
+    "testId": 23
+  },
+  {
+    "numPassedTests": 15,
+    "failedTests": 0,
+    "numTotalTests": 15,
+    "timestamp": 1788979981819,
+    "success": true,
+    "testId": 23
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: aplicar 5% de descuento para montos de $3000 o mas",
+    "commitTimestamp": 1788980043326,
+    "testId": 23
   }
 ]

@@ -399,12 +399,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "075e6946d0b04038b93cda3cad0d7b73648564c7",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T18:51:04.000Z",
       "message": "feat: aplicar 3% de descuento para montos de $1000 o mas",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/075e6946d0b04038b93cda3cad0d7b73648564c7"
     },
     "stats": {
       "total": 11,
@@ -414,6 +414,25 @@
     },
     "coverage": 85.71,
     "test_count": 14,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T18:54:02.000Z",
+      "message": "feat: aplicar 5% de descuento para montos de $3000 o mas",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 12,
+      "deletions": 2,
+      "date": "2026-09-09"
+    },
+    "coverage": 76.92,
+    "test_count": 15,
     "failed_tests": 0,
     "conclusion": "success"
   }
