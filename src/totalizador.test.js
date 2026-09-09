@@ -99,4 +99,9 @@ describe ("Ciclo 4: Categoría de Producto", () => {
     expect(Totalizador.obtenerCategoria("")).toBe("Varios");
     expect(Totalizador.obtenerCategoria(null)).toBe("Varios");
   });
+
+  it("debería retornar 2% de descuento adicional para la categoría Alimentos", () => {
+    expect(Totalizador.obtenerDescuentoCategoria("Alimentos")).toBe(0.02);
+    expect(Totalizador.obtenerDescuentoCategoria("Varios")).toBe(0);
+  });
 });

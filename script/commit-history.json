@@ -551,12 +551,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "71367f7235c950a96a60046ac3d220ae29d95034",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T19:26:17.000Z",
       "message": "feat: asignar Varios como categoria por defecto",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/71367f7235c950a96a60046ac3d220ae29d95034"
     },
     "stats": {
       "total": 18,
@@ -566,6 +566,25 @@
     },
     "coverage": 91.67,
     "test_count": 20,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T19:35:24.000Z",
+      "message": "feat: agregar descuento adicional del 2% para Alimentos",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2026-09-09"
+    },
+    "coverage": 92.86,
+    "test_count": 21,
     "failed_tests": 0,
     "conclusion": "success"
   }

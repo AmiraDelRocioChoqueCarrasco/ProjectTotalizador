@@ -66,4 +66,10 @@ export class Totalizador {
   static obtenerCategoria(categoria) {
     return categoria ? categoria : "Varios";
   }
+
+  static obtenerDescuentoCategoria(categoria) {
+    const cat = this.obtenerCategoria(categoria);
+    if (cat === "Alimentos") return 0.02;
+    return 0;
+  }
 }

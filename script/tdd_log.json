@@ -630,7 +630,7 @@
     "testId": 28
   },
   {
-    "commitId": "HEAD",
+    "commitId": "71367f7235c950a96a60046ac3d220ae29d95034",
     "commitName": "feat: renderizar descuento por monto acumulado en el presentador de la vista",
     "commitTimestamp": 1788981295176,
     "testId": 29
@@ -672,5 +672,27 @@
     "commitName": "feat: asignar Varios como categoria por defecto",
     "commitTimestamp": 1788981978409,
     "testId": 30
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 1,
+    "numTotalTests": 21,
+    "timestamp": 1788982191093,
+    "success": false,
+    "testId": 31
+  },
+  {
+    "numPassedTests": 21,
+    "failedTests": 0,
+    "numTotalTests": 21,
+    "timestamp": 1788982503432,
+    "success": true,
+    "testId": 31
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar descuento adicional del 2% para Alimentos",
+    "commitTimestamp": 1788982525537,
+    "testId": 31
   }
 ]
