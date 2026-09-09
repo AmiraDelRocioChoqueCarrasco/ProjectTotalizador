@@ -109,4 +109,8 @@ describe ("Ciclo 4: Categoría de Producto", () => {
     expect(Totalizador.obtenerImpuestoCategoria("Bebidas alcohólicas")).toBe(0.07);
     expect(Totalizador.obtenerImpuestoCategoria("Varios")).toBe(0);
   });
+
+  it("debería retornar 1.5% de descuento adicional para Material de escritorio", () => {
+    expect(Totalizador.obtenerDescuentoCategoria("Material de escritorio")).toBe(0.015);
+  });
 });

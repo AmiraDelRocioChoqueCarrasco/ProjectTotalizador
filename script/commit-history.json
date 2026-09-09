@@ -589,12 +589,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "fecd08fa2ca4bcba887993f75607dcb5e3b27727",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T19:36:30.000Z",
       "message": "feat: agregar impuesto adicional del 7% para Bebidas alcoholicas",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/fecd08fa2ca4bcba887993f75607dcb5e3b27727"
     },
     "stats": {
       "total": 11,
@@ -604,6 +604,25 @@
     },
     "coverage": 93.75,
     "test_count": 22,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T19:37:16.000Z",
+      "message": "feat: agregar descuento adicional del 1.5% para Material de escritorio",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2026-09-09"
+    },
+    "coverage": 84.21,
+    "test_count": 23,
     "failed_tests": 0,
     "conclusion": "success"
   }

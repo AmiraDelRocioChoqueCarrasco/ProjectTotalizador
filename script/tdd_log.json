@@ -690,7 +690,7 @@
     "testId": 31
   },
   {
-    "commitId": "HEAD",
+    "commitId": "fecd08fa2ca4bcba887993f75607dcb5e3b27727",
     "commitName": "feat: agregar descuento adicional del 2% para Alimentos",
     "commitTimestamp": 1788982525537,
     "testId": 31
@@ -724,5 +724,27 @@
     "commitName": "feat: agregar impuesto adicional del 7% para Bebidas alcoholicas",
     "commitTimestamp": 1788982591185,
     "testId": 32
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 1,
+    "numTotalTests": 23,
+    "timestamp": 1788982605214,
+    "success": false,
+    "testId": 33
+  },
+  {
+    "numPassedTests": 23,
+    "failedTests": 0,
+    "numTotalTests": 23,
+    "timestamp": 1788982617999,
+    "success": true,
+    "testId": 33
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar descuento adicional del 1.5% para Material de escritorio",
+    "commitTimestamp": 1788982637673,
+    "testId": 33
   }
 ]
