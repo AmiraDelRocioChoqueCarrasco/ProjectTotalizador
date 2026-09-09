@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html xml:lang="es">
-  <head>
-    <title>Sumador</title>
-  </head>
-  <body>
-    <h1>Sumador</h1>
-    <form id="sumar-form">
-      <label for="primer-numero">Primer número:</label>
-      <input type="number" id="primer-numero" />
-      <label for="segundo-numero">Segundo número:</label>
-      <input type="number" id="segundo-numero" />
-      <input type="submit" value="Sumar" id="sumar-button" />
-    </form>
-    <div id="resultado-div"></div>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Totalizador de Ventas</title>
+</head>
+<body>
+  <h1>Totalizador de Ventas</h1>
+  <form id="totalizador-form">
+    <label for="cantidad">Cantidad de items:</label>
+    <input type="number" id="cantidad" step="any"><br><br>
 
-    <script type="module" src="./src/presenter.js"></script>
-  </body>
+    <label for="precio">Precio por item ($):</label>
+    <input type="number" id="precio" step="any"><br><br>
+
+    <button type="submit" id="btn-totalizar">Totalizar</button>
+    <button type="button" id="btn-cancelar">Cancelar</button>
+  </form>
+
+  <div id="resultado-div"></div>
+  <script type="module" src="./src/presenter.js"></script>
+</body>
 </html>
