@@ -382,7 +382,7 @@
     "testId": 17
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5343f59781ec53789f8c5300a095f95bb4830da0",
     "commitName": "fix: lanzar error ante codigos de estado no reconocidos",
     "commitTimestamp": 1788979077875,
     "testId": 17
@@ -400,5 +400,11 @@
     "commitName": "feat: Refactorizacion del codigo",
     "commitTimestamp": 1788979224944,
     "testId": 18
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: implementacion index.html",
+    "commitTimestamp": 1788979286631,
+    "testId": 19
   }
 ]
