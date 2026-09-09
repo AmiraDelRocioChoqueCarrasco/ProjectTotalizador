@@ -248,7 +248,7 @@
     "testId": 12
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1b94d24537bbf285253b35f6c46bef1fc0862628",
     "commitName": "feat: agregar calculo de impuesto del 8.25% para estado CA",
     "commitTimestamp": 1788970234227,
     "testId": 12
@@ -274,5 +274,27 @@
     "commitName": "feat: agregar calculo de impuesto del 4.00% para estado AL",
     "commitTimestamp": 1788970323255,
     "testId": 13
+  },
+  {
+    "numPassedTests": 8,
+    "failedTests": 1,
+    "numTotalTests": 9,
+    "timestamp": 1788978699795,
+    "success": false,
+    "testId": 14
+  },
+  {
+    "numPassedTests": 9,
+    "failedTests": 0,
+    "numTotalTests": 9,
+    "timestamp": 1788978774906,
+    "success": true,
+    "testId": 14
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar calculo de impuesto del 8.00% para estado NV",
+    "commitTimestamp": 1788978836890,
+    "testId": 14
   }
 ]
