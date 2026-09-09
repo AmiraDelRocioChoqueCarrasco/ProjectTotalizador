@@ -134,4 +134,7 @@ describe ("Ciclo 6: Tipo de Cliente y Fijos", () => {
     expect(Totalizador.obtenerDescuentoCliente("Recurrente")).toBe(0.005);
   });
 
+  it("debería retornar 1% de descuento para cliente Frecuente", () => {
+    expect(Totalizador.obtenerDescuentoCliente("Frecuente")).toBe(0.01);
+  });
 });

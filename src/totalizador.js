@@ -134,4 +134,11 @@ export class Totalizador {
     if (cliente === "Recurrente") return 0.005;
     return 0;
   }
+  
+  static obtenerDescuentoCliente(tipo) {
+    const cliente = this.obtenerTipoCliente(tipo);
+    if (cliente === "Recurrente") return 0.005;
+    if (cliente === "Frecuente") return 0.01;
+    return 0;
+  }
 }

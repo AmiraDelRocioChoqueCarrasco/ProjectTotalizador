@@ -1052,7 +1052,7 @@
     "testId": 46
   },
   {
-    "commitId": "HEAD",
+    "commitId": "c811ea929d81381bbfd188035772371b129f704a",
     "commitName": "feat: asignar Normal como tipo de cliente por defecto",
     "commitTimestamp": 1788990283495,
     "testId": 46
@@ -1086,5 +1086,27 @@
     "commitName": "feat: agregar 0.5% de descuento para cliente Recurrente",
     "commitTimestamp": 1788992698562,
     "testId": 47
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1788992870479,
+    "success": false,
+    "testId": 48
+  },
+  {
+    "numPassedTests": 26,
+    "failedTests": 0,
+    "numTotalTests": 26,
+    "timestamp": 1788993550235,
+    "success": true,
+    "testId": 48
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar 1% de descuento para cliente Frecuente",
+    "commitTimestamp": 1788993578224,
+    "testId": 48
   }
 ]
