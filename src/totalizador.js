@@ -153,6 +153,15 @@ export class Totalizador {
   }
 
   static esEnvioGratis(precioNeto, cliente) {
-  return precioNeto >= 3000 || this.obtenerTipoCliente(cliente) === "Especial";
+    return precioNeto >= 3000 || this.obtenerTipoCliente(cliente) === "Especial";
+  }
+
+  static calcularCostoEnvioAjustado(peso, cantidad, neto, cliente) {
+  if (this.esEnvioGratis(neto, cliente)) return 0;
+  const envioBase = this.calcularCostoEnvio(peso, cantidad);
+  if (this.obtenerTipoCliente(cliente) === "Frecuente") {
+    return Math.round((envioBase / 2) * 100) / 100;
+  }
+  return envioBase;
 }
 }

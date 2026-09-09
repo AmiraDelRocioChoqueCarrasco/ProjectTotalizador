@@ -1190,7 +1190,7 @@
     "testId": 52
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f2ad1aa4e857928ea007522eabdcb67c9c0dbd76",
     "commitName": "feat: integrar tipo de cliente y total final en la vista principal",
     "commitTimestamp": 1788994145940,
     "testId": 53
@@ -1232,5 +1232,27 @@
     "commitName": "feat: aplicar regla de envio gratis por monto o cliente especial",
     "commitTimestamp": 1788994932697,
     "testId": 54
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 1,
+    "numTotalTests": 32,
+    "timestamp": 1788995043554,
+    "success": false,
+    "testId": 55
+  },
+  {
+    "numPassedTests": 32,
+    "failedTests": 0,
+    "numTotalTests": 32,
+    "timestamp": 1788995060216,
+    "success": true,
+    "testId": 55
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: aplicar 50% de descuento en envio a cliente frecuente",
+    "commitTimestamp": 1788995072521,
+    "testId": 55
   }
 ]

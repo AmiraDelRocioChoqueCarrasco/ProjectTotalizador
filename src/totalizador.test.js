@@ -179,4 +179,9 @@ describe ("Ciclo 7: Reglas Especiales y Promociones de Envío", () => {
     expect(Totalizador.esEnvioGratis(500, "Especial")).toBe(true);
     expect(Totalizador.esEnvioGratis(500, "Normal")).toBe(false);
     });
+
+    it("debería reducir el envío al 50% si el cliente es Frecuente", () => {
+  // Para peso 15 (tarifa 3.5), 2 ítems -> envío base = 7. Con 50% desc = 3.5
+  expect(Totalizador.calcularCostoEnvioAjustado(15, 2, 500, "Frecuente")).toBe(3.5);
+});
 });
