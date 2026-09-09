@@ -588,7 +588,7 @@
     "testId": 26
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a5e16f6a2946438a8090d84a8d79642ee5ce3ac9",
     "commitName": "refactor: estructurar descuentos por monto en arreglo de rangos estaticos",
     "commitTimestamp": 1788980636142,
     "testId": 26
@@ -606,5 +606,27 @@
     "commitName": "feat: refactorizacion de la implementacion",
     "commitTimestamp": 1788980884940,
     "testId": 27
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 0,
+    "numTotalTests": 19,
+    "timestamp": 1788980921449,
+    "success": true,
+    "testId": 28
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 0,
+    "numTotalTests": 19,
+    "timestamp": 1788980942881,
+    "success": true,
+    "testId": 28
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: modificacion y ordenamiento de codigo de totalizador.js",
+    "commitTimestamp": 1788980985019,
+    "testId": 28
   }
 ]

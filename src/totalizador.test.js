@@ -83,4 +83,13 @@ describe("Ciclo 3: Descuentos por Monto", () => {
   it("debería aplicar un 15% de descuento cuando el monto neto alcanza los $30,000", () => {
     expect(Totalizador.calcularDescuentoMonto(30000)).toBe(4500);
   });
+
+  it("debería obtener el porcentaje exacto de descuento correspondiente", () => {
+    expect(Totalizador.obtenerPorcentajeDescuentoMonto(500)).toBe(0);
+    expect(Totalizador.obtenerPorcentajeDescuentoMonto(1000)).toBe(0.03);
+    expect(Totalizador.obtenerPorcentajeDescuentoMonto(3000)).toBe(0.05);
+    expect(Totalizador.obtenerPorcentajeDescuentoMonto(7000)).toBe(0.07);
+    expect(Totalizador.obtenerPorcentajeDescuentoMonto(10000)).toBe(0.10);
+    expect(Totalizador.obtenerPorcentajeDescuentoMonto(30000)).toBe(0.15);
+  });
 });

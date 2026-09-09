@@ -7,6 +7,14 @@ export class Totalizador {
     TX: 0.0625,
   };
 
+  static RANGOS_DESCUENTO = [
+    { umbral: 30000, porcentaje: 0.15 },
+    { umbral: 10000, porcentaje: 0.10 },
+    { umbral: 7000, porcentaje: 0.07 },
+    { umbral: 3000, porcentaje: 0.05 },
+    { umbral: 1000, porcentaje: 0.03 },
+  ];
+
   static convertirANumero(valor) {
     return Number(valor);
   }
@@ -43,22 +51,6 @@ export class Totalizador {
     }
     return Math.round(precioNeto * tasa * 100) / 100;
   }
-
-  static calcularDescuentoMonto(precioNeto) {
-    if (precioNeto >= 10000) return Math.round(precioNeto * 0.10 * 100) / 100;
-    if (precioNeto >= 7000) return Math.round(precioNeto * 0.07 * 100) / 100;
-    if (precioNeto >= 3000) return Math.round(precioNeto * 0.05 * 100) / 100;
-    if (precioNeto >= 1000) return Math.round(precioNeto * 0.03 * 100) / 100;
-    return 0;
-  }
-
-  static RANGOS_DESCUENTO = [
-    { umbral: 30000, porcentaje: 0.15 },
-    { umbral: 10000, porcentaje: 0.10 },
-    { umbral: 7000, porcentaje: 0.07 },
-    { umbral: 3000, porcentaje: 0.05 },
-    { umbral: 1000, porcentaje: 0.03 },
-  ];
 
   static obtenerPorcentajeDescuentoMonto(precioNeto) {
     const rango = this.RANGOS_DESCUENTO.find((r) => precioNeto >= r.umbral);
