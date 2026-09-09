@@ -570,12 +570,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6e33715b473f57155ec1daf66203dafcb07dae85",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T19:35:24.000Z",
       "message": "feat: agregar descuento adicional del 2% para Alimentos",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/6e33715b473f57155ec1daf66203dafcb07dae85"
     },
     "stats": {
       "total": 11,
@@ -585,6 +585,25 @@
     },
     "coverage": 92.86,
     "test_count": 21,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T19:36:30.000Z",
+      "message": "feat: agregar impuesto adicional del 7% para Bebidas alcoholicas",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2026-09-09"
+    },
+    "coverage": 93.75,
+    "test_count": 22,
     "failed_tests": 0,
     "conclusion": "success"
   }

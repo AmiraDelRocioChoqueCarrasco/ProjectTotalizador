@@ -104,4 +104,9 @@ describe ("Ciclo 4: Categoría de Producto", () => {
     expect(Totalizador.obtenerDescuentoCategoria("Alimentos")).toBe(0.02);
     expect(Totalizador.obtenerDescuentoCategoria("Varios")).toBe(0);
   });
+
+  it("debería retornar 7% de impuesto adicional para Bebidas alcohólicas", () => {
+    expect(Totalizador.obtenerImpuestoCategoria("Bebidas alcohólicas")).toBe(0.07);
+    expect(Totalizador.obtenerImpuestoCategoria("Varios")).toBe(0);
+  });
 });

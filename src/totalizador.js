@@ -72,4 +72,10 @@ export class Totalizador {
     if (cat === "Alimentos") return 0.02;
     return 0;
   }
+
+  static obtenerImpuestoCategoria(categoria) {
+    const cat = this.obtenerCategoria(categoria);
+    if (cat === "Bebidas alcohólicas") return 0.07;
+    return 0;
+  }
 }
