@@ -270,7 +270,7 @@
     "testId": 13
   },
   {
-    "commitId": "HEAD",
+    "commitId": "39f6834ec6e75419c8667191be39ccdab507aa4e",
     "commitName": "feat: agregar calculo de impuesto del 4.00% para estado AL",
     "commitTimestamp": 1788970323255,
     "testId": 13
@@ -296,5 +296,35 @@
     "commitName": "feat: agregar calculo de impuesto del 8.00% para estado NV",
     "commitTimestamp": 1788978836890,
     "testId": 14
+  },
+  {
+    "numPassedTests": 9,
+    "failedTests": 1,
+    "numTotalTests": 10,
+    "timestamp": 1788978881418,
+    "success": false,
+    "testId": 15
+  },
+  {
+    "numPassedTests": 10,
+    "failedTests": 0,
+    "numTotalTests": 10,
+    "timestamp": 1788978904137,
+    "success": true,
+    "testId": 15
+  },
+  {
+    "numPassedTests": 10,
+    "failedTests": 0,
+    "numTotalTests": 10,
+    "timestamp": 1788978913539,
+    "success": true,
+    "testId": 15
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar calculo de impuesto del 6.65% para estado UT",
+    "commitTimestamp": 1788978932387,
+    "testId": 15
   }
 ]
