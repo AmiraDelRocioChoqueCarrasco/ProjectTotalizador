@@ -534,7 +534,7 @@
     "testId": 25
   },
   {
-    "commitId": "HEAD",
+    "commitId": "065617d1d7a2f3ab2aee716e2075083c251070b8",
     "commitName": "feat: aplicar 10% de descuento para montos de $10000 o mas",
     "commitTimestamp": 1788980314150,
     "testId": 25
@@ -592,5 +592,19 @@
     "commitName": "refactor: estructurar descuentos por monto en arreglo de rangos estaticos",
     "commitTimestamp": 1788980636142,
     "testId": 26
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 0,
+    "numTotalTests": 18,
+    "timestamp": 1788980815199,
+    "success": true,
+    "testId": 27
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: refactorizacion de la implementacion",
+    "commitTimestamp": 1788980884940,
+    "testId": 27
   }
 ]

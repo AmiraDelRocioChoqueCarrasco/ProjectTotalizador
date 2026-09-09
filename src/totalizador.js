@@ -45,30 +45,6 @@ export class Totalizador {
   }
 
   static calcularDescuentoMonto(precioNeto) {
-    return 0;
-  }
-
-  static calcularDescuentoMonto(precioNeto) {
-    if (precioNeto >= 1000) {
-      return Math.round(precioNeto * 0.03 * 100) / 100;
-    }
-    return 0;
-  }
-
-  static calcularDescuentoMonto(precioNeto) {
-    if (precioNeto >= 3000) return Math.round(precioNeto * 0.05 * 100) / 100;
-    if (precioNeto >= 1000) return Math.round(precioNeto * 0.03 * 100) / 100;
-    return 0;
-  }
-
-  static calcularDescuentoMonto(precioNeto) {
-    if (precioNeto >= 7000) return Math.round(precioNeto * 0.07 * 100) / 100;
-    if (precioNeto >= 3000) return Math.round(precioNeto * 0.05 * 100) / 100;
-    if (precioNeto >= 1000) return Math.round(precioNeto * 0.03 * 100) / 100;
-    return 0;
-  }
-
-  static calcularDescuentoMonto(precioNeto) {
     if (precioNeto >= 10000) return Math.round(precioNeto * 0.10 * 100) / 100;
     if (precioNeto >= 7000) return Math.round(precioNeto * 0.07 * 100) / 100;
     if (precioNeto >= 3000) return Math.round(precioNeto * 0.05 * 100) / 100;
@@ -88,7 +64,7 @@ export class Totalizador {
     const rango = this.RANGOS_DESCUENTO.find((r) => precioNeto >= r.umbral);
     return rango ? rango.porcentaje : 0;
   }
-  
+
   static calcularDescuentoMonto(precioNeto) {
     const tasa = this.obtenerPorcentajeDescuentoMonto(precioNeto);
     return Math.round(precioNeto * tasa * 100) / 100;

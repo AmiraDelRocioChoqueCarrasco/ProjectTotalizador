@@ -475,12 +475,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "065617d1d7a2f3ab2aee716e2075083c251070b8",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T19:03:54.000Z",
       "message": "refactor: estructurar descuentos por monto en arreglo de rangos estaticos",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/065617d1d7a2f3ab2aee716e2075083c251070b8"
     },
     "stats": {
       "total": 22,
@@ -489,6 +489,25 @@
       "date": "2026-09-09"
     },
     "coverage": 43.75,
+    "test_count": 18,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T19:08:03.000Z",
+      "message": "feat: refactorizacion de la implementacion",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 26,
+      "additions": 1,
+      "deletions": 25,
+      "date": "2026-09-09"
+    },
+    "coverage": 65.63,
     "test_count": 18,
     "failed_tests": 0,
     "conclusion": "success"
