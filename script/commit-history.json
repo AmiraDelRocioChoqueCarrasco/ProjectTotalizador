@@ -532,12 +532,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "7768ed004865609c7cac976b9de09e3f081ba64e",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T19:14:53.000Z",
       "message": "feat: renderizar descuento por monto acumulado en el presentador de la vista",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/7768ed004865609c7cac976b9de09e3f081ba64e"
     },
     "stats": {
       "total": 2,
@@ -547,6 +547,25 @@
     },
     "coverage": 91.3,
     "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T19:26:17.000Z",
+      "message": "feat: asignar Varios como categoria por defecto",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 15,
+      "deletions": 3,
+      "date": "2026-09-09"
+    },
+    "coverage": 91.67,
+    "test_count": 20,
     "failed_tests": 0,
     "conclusion": "success"
   }

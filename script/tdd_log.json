@@ -624,7 +624,7 @@
     "testId": 28
   },
   {
-    "commitId": "HEAD",
+    "commitId": "7768ed004865609c7cac976b9de09e3f081ba64e",
     "commitName": "feat: modificacion y ordenamiento de codigo de totalizador.js",
     "commitTimestamp": 1788980985019,
     "testId": 28
@@ -634,5 +634,43 @@
     "commitName": "feat: renderizar descuento por monto acumulado en el presentador de la vista",
     "commitTimestamp": 1788981295176,
     "testId": 29
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 1,
+    "numTotalTests": 20,
+    "timestamp": 1788981800010,
+    "success": false,
+    "testId": 30
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 1,
+    "numTotalTests": 20,
+    "timestamp": 1788981894508,
+    "success": false,
+    "testId": 30
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 0,
+    "numTotalTests": 20,
+    "timestamp": 1788981956810,
+    "success": true,
+    "testId": 30
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 0,
+    "numTotalTests": 20,
+    "timestamp": 1788981968464,
+    "success": true,
+    "testId": 30
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: asignar Varios como categoria por defecto",
+    "commitTimestamp": 1788981978409,
+    "testId": 30
   }
 ]

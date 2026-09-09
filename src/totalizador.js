@@ -61,4 +61,9 @@ export class Totalizador {
     const tasa = this.obtenerPorcentajeDescuentoMonto(precioNeto);
     return Math.round(precioNeto * tasa * 100) / 100;
   }
+
+  ////ciclo 4
+  static obtenerCategoria(categoria) {
+    return categoria ? categoria : "Varios";
+  }
 }

@@ -1,6 +1,6 @@
 import { Totalizador } from "./totalizador.js";
 
-describe("Ciclo 1: Entradas, Precio Neto y Validaciones", () => {
+describe ("Ciclo 1: Entradas, Precio Neto y Validaciones", () => {
   it("deberia parsear un string numerico a un tipo number", () => {
     expect(Totalizador.convertirANumero("20")).toBe(20);
     expect(Totalizador.convertirANumero("3.5")).toBe(3.5);
@@ -27,7 +27,7 @@ describe("Ciclo 1: Entradas, Precio Neto y Validaciones", () => {
   });
 });
 
-describe("Ciclo 2: Impuestos por Estado y Selección por Defecto", () => {
+describe ("Ciclo 2: Impuestos por Estado y Selección por Defecto", () => {
   it("debería retornar CA como estado por defecto si el valor ingresado es vacío o nulo", () => {
     expect(Totalizador.obtenerEstado("")).toBe("CA");
     expect(Totalizador.obtenerEstado(null)).toBe("CA");
@@ -59,7 +59,7 @@ describe("Ciclo 2: Impuestos por Estado y Selección por Defecto", () => {
   });
 });
 
-describe("Ciclo 3: Descuentos por Monto", () => {
+describe ("Ciclo 3: Descuentos por Monto", () => {
     it("debería retornar 0 de descuento si el monto neto es menor a $1,000", () => {
     expect(Totalizador.calcularDescuentoMonto(500)).toBe(0);
   });
@@ -91,5 +91,12 @@ describe("Ciclo 3: Descuentos por Monto", () => {
     expect(Totalizador.obtenerPorcentajeDescuentoMonto(7000)).toBe(0.07);
     expect(Totalizador.obtenerPorcentajeDescuentoMonto(10000)).toBe(0.10);
     expect(Totalizador.obtenerPorcentajeDescuentoMonto(30000)).toBe(0.15);
+  });
+});
+
+describe ("Ciclo 4: Categoría de Producto", () => {
+  it("debería retornar 'Varios' como categoría por defecto si no se especifica", () => {
+    expect(Totalizador.obtenerCategoria("")).toBe("Varios");
+    expect(Totalizador.obtenerCategoria(null)).toBe("Varios");
   });
 });
