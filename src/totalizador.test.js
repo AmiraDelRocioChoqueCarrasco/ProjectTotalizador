@@ -43,4 +43,7 @@ describe("Ciclo 2: Impuestos por Estado", () => {
   it("debería calcular el impuesto para Utah (6.65%) sobre un precio neto", () => {
     expect(Totalizador.calcularImpuestoEstado(100, "UT")).toBe(6.65);
   });
+  it("debería calcular el impuesto para Texas (6.25%) sobre un precio neto", () => {
+    expect(Totalizador.calcularImpuestoEstado(100, "TX")).toBe(6.25);
+  });
 });

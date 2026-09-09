@@ -266,12 +266,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "41016bb5d966e82b2a329e30b02a82098e2f185e",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T18:35:31.000Z",
       "message": "feat: agregar calculo de impuesto del 6.65% para estado UT",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/41016bb5d966e82b2a329e30b02a82098e2f185e"
     },
     "stats": {
       "total": 11,
@@ -281,6 +281,25 @@
     },
     "coverage": 46.15,
     "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T18:36:55.000Z",
+      "message": "refactor: estructurar tasas de impuestos de estados en diccionario estatico",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 16,
+      "deletions": 0,
+      "date": "2026-09-09"
+    },
+    "coverage": 30.23,
+    "test_count": 11,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -57,4 +57,17 @@ export class Totalizador {
     if (est === "UT") return Math.round(precioNeto * 0.0665 * 100) / 100;
     return 0;
   }
+  static TASAS_IMPUESTOS = {
+    CA: 0.0825,
+    AL: 0.0400,
+    NV: 0.0800,
+    UT: 0.0665,
+    TX: 0.0625,
+  };
+
+  static calcularImpuestoEstado(precioNeto, estado) {
+    const est = this.obtenerEstado(estado);
+    const tasa = this.TASAS_IMPUESTOS[est] || 0;
+    return Math.round(precioNeto * tasa * 100) / 100;
+  }
 }

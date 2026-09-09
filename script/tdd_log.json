@@ -292,7 +292,7 @@
     "testId": 14
   },
   {
-    "commitId": "HEAD",
+    "commitId": "41016bb5d966e82b2a329e30b02a82098e2f185e",
     "commitName": "feat: agregar calculo de impuesto del 8.00% para estado NV",
     "commitTimestamp": 1788978836890,
     "testId": 14
@@ -326,5 +326,43 @@
     "commitName": "feat: agregar calculo de impuesto del 6.65% para estado UT",
     "commitTimestamp": 1788978932387,
     "testId": 15
+  },
+  {
+    "numPassedTests": 10,
+    "failedTests": 1,
+    "numTotalTests": 11,
+    "timestamp": 1788978963407,
+    "success": false,
+    "testId": 16
+  },
+  {
+    "numPassedTests": 10,
+    "failedTests": 1,
+    "numTotalTests": 11,
+    "timestamp": 1788978969855,
+    "success": false,
+    "testId": 16
+  },
+  {
+    "numPassedTests": 11,
+    "failedTests": 0,
+    "numTotalTests": 11,
+    "timestamp": 1788978996575,
+    "success": true,
+    "testId": 16
+  },
+  {
+    "numPassedTests": 11,
+    "failedTests": 0,
+    "numTotalTests": 11,
+    "timestamp": 1788979001011,
+    "success": true,
+    "testId": 16
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: estructurar tasas de impuestos de estados en diccionario estatico",
+    "commitTimestamp": 1788979016515,
+    "testId": 16
   }
 ]
