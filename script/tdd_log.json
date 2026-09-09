@@ -132,7 +132,7 @@
     "testId": 6
   },
   {
-    "commitId": "HEAD",
+    "commitId": "9787ca268863004b112c0802c2c951273521f6d8",
     "commitName": "fix: agregar validacion para cantidad vacia, cero o negativa",
     "commitTimestamp": 1788969542040,
     "testId": 6
@@ -158,5 +158,35 @@
     "commitName": "fix: agregar validacion para precio vacio, cero o negativo",
     "commitTimestamp": 1788969703119,
     "testId": 7
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1788969719784,
+    "success": true,
+    "testId": 8
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1788969732093,
+    "success": true,
+    "testId": 8
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1788969819083,
+    "success": true,
+    "testId": 8
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: refactorizacion de codigo",
+    "commitTimestamp": 1788969838350,
+    "testId": 8
   }
 ]
