@@ -1,0 +1,40 @@
+[
+  {
+    "sha": "a4d32a546235425dd0cf89eb53705d1792a6a7f9",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T15:39:33.000Z",
+      "message": "feat: calcular precio neto multiplicando cantidad por precio",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/a4d32a546235425dd0cf89eb53705d1792a6a7f9"
+    },
+    "stats": {
+      "total": 62,
+      "additions": 31,
+      "deletions": 31,
+      "date": "2026-09-09"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-09T15:40:21.000Z",
+      "message": "feat: agregar soporte para calculo de precio neto con decimales",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
+      "deletions": 0,
+      "date": "2026-09-09"
+    },
+    "coverage": 50,
+    "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  }
+]

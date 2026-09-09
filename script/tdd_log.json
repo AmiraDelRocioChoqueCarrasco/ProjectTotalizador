@@ -1,0 +1,30 @@
+[
+  {
+    "numPassedTests": 0,
+    "failedTests": 1,
+    "numTotalTests": 1,
+    "timestamp": 1788968080190,
+    "success": false,
+    "testId": 0
+  },
+  {
+    "numPassedTests": 1,
+    "failedTests": 0,
+    "numTotalTests": 1,
+    "timestamp": 1788968158772,
+    "success": true,
+    "testId": 0
+  },
+  {
+    "commitId": "a4d32a546235425dd0cf89eb53705d1792a6a7f9",
+    "commitName": "feat: calcular precio neto multiplicando cantidad por precio",
+    "commitTimestamp": 1788968374221,
+    "testId": 0
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar soporte para calculo de precio neto con decimales",
+    "commitTimestamp": 1788968422669,
+    "testId": 1
+  }
+]
