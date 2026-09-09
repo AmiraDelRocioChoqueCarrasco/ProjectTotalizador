@@ -149,4 +149,9 @@ export class Totalizador {
     if (cliente === "Especial") return 0.015;
     return 0;
   }
+
+  static calcularDescuentoCliente(precioNeto, tipo) {
+    const tasa = this.obtenerDescuentoCliente(tipo);
+    return Math.round(precioNeto * tasa * 100) / 100;
+  }
 }

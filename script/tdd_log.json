@@ -1104,7 +1104,7 @@
     "testId": 48
   },
   {
-    "commitId": "HEAD",
+    "commitId": "cb120a547e78313bd925714a714aa32cb278656a",
     "commitName": "feat: agregar 1% de descuento para cliente Frecuente",
     "commitTimestamp": 1788993578224,
     "testId": 48
@@ -1130,5 +1130,27 @@
     "commitName": "feat: agregar 1.5% de descuento para cliente Especial",
     "commitTimestamp": 1788993650550,
     "testId": 49
+  },
+  {
+    "numPassedTests": 27,
+    "failedTests": 1,
+    "numTotalTests": 28,
+    "timestamp": 1788993815063,
+    "success": false,
+    "testId": 50
+  },
+  {
+    "numPassedTests": 28,
+    "failedTests": 0,
+    "numTotalTests": 28,
+    "timestamp": 1788993830273,
+    "success": true,
+    "testId": 50
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: calcular monto de descuento por tipo de cliente",
+    "commitTimestamp": 1788993845237,
+    "testId": 50
   }
 ]
