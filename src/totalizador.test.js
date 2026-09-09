@@ -125,8 +125,13 @@ describe("Ciclo 5: Peso Volumétrico y Envío", () => {
 });
 
 describe ("Ciclo 6: Tipo de Cliente y Fijos", () => {
-    it("debería retornar 'Normal' como tipo de cliente por defecto si no se especifica", () => {
+  it("debería retornar 'Normal' como tipo de cliente por defecto si no se especifica", () => {
     expect(Totalizador.obtenerTipoCliente("")).toBe("Normal");
     expect(Totalizador.obtenerTipoCliente(null)).toBe("Normal");
   });
+
+  it("debería retornar 0.5% de descuento para cliente Recurrente", () => {
+    expect(Totalizador.obtenerDescuentoCliente("Recurrente")).toBe(0.005);
+  });
+
 });

@@ -128,4 +128,10 @@ export class Totalizador {
   static obtenerTipoCliente(tipo) {
     return tipo ? tipo : "Normal";
   }
+
+  static obtenerDescuentoCliente(tipo) {
+    const cliente = this.obtenerTipoCliente(tipo);
+    if (cliente === "Recurrente") return 0.005;
+    return 0;
+  }
 }

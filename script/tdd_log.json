@@ -1030,7 +1030,7 @@
     "testId": 44
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5f9906b4b78ef3ec4eadc23ba1fd4fa288f46b51",
     "commitName": "feat: renderizar costo de envio basado en peso volumetrico en UI",
     "commitTimestamp": 1788984881797,
     "testId": 45
@@ -1056,5 +1056,35 @@
     "commitName": "feat: asignar Normal como tipo de cliente por defecto",
     "commitTimestamp": 1788990283495,
     "testId": 46
+  },
+  {
+    "numPassedTests": 24,
+    "failedTests": 1,
+    "numTotalTests": 25,
+    "timestamp": 1788990329762,
+    "success": false,
+    "testId": 47
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 0,
+    "numTotalTests": 25,
+    "timestamp": 1788990457080,
+    "success": true,
+    "testId": 47
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 0,
+    "numTotalTests": 25,
+    "timestamp": 1788992686581,
+    "success": true,
+    "testId": 47
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar 0.5% de descuento para cliente Recurrente",
+    "commitTimestamp": 1788992698562,
+    "testId": 47
   }
 ]
