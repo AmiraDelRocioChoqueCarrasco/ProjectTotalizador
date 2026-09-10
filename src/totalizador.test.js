@@ -124,7 +124,7 @@ describe("Ciclo 5: Peso Volumétrico y Envío", () => {
   });
 });
 
-describe ("Ciclo 6: Tipo de Cliente y Fijos", () => {
+describe("Ciclo 6: Tipo de Cliente y Fijos", () => {
   it("debería retornar 'Normal' como tipo de cliente por defecto si no se especifica", () => {
     expect(Totalizador.obtenerTipoCliente("")).toBe("Normal");
     expect(Totalizador.obtenerTipoCliente(null)).toBe("Normal");
@@ -145,63 +145,44 @@ describe ("Ciclo 6: Tipo de Cliente y Fijos", () => {
   it("debería calcular el monto de descuento por tipo de cliente sobre el precio neto", () => {
     expect(Totalizador.calcularDescuentoCliente(1000, "Especial")).toBe(15);
   });
+});
 
-  it("debería calcular el Total Final considerando netos, descuentos, impuestos y envío", () => {
-    // Ejemplo: Neto = 1000, CA (8.25%), Alimentos (2% desc), Especial (1.5% desc), Peso 15 (Tarifa 3.5), Cantidad 1
-    // Neto: 1000
-    // Desc Monto (3%): 30
-    // Desc Categoria (2%): 20
-    // Desc Cliente (1.5%): 15
-    // Imp Estado (8.25%): 82.5
-    // Imp Categoria (0%): 0
-    // Envio (3.5 * 1): 3.5
-    // Total = 1000 - 30 - 20 - 15 + 82.5 + 0 + 3.5 = 1021
+describe("Ciclo 7: Reglas Especiales y Promociones de Envío", () => {
+  it("debería retornar envío 0 si el monto neto >= 3000 o si el cliente es Especial", () => {
+    expect(Totalizador.esEnvioGratis(3000, "Normal")).toBe(true);
+    expect(Totalizador.esEnvioGratis(500, "Especial")).toBe(true);
+    expect(Totalizador.esEnvioGratis(500, "Normal")).toBe(false);
+  });
+
+  it("debería reducir el envío al 50% si el cliente es Frecuente", () => {
+    expect(Totalizador.calcularCostoEnvioAjustado(15, 2, 500, "Frecuente")).toBe(3.5);
+  });
+});
+
+describe("Ciclo 8: Consolidación y Liquidación Completa", () => {
+  it("debería calcular el Total Final sumando netos, impuestos y envío, restando todos los descuentos", () => {
     const total = Totalizador.calcularTotalFinal({
       neto: 1000,
       descMonto: 30,
       descCat: 20,
-      descCliente: 15,
+      descCliente: 10,
       impEstado: 82.5,
       impCat: 0,
-      costoEnvio: 3.5
+      costoEnvio: 3.5,
     });
-    expect(total).toBe(1021);
+    expect(total).toBe(1026);
   });
 
-  it("debería calcular el descuento por cliente sobre el precio neto", () => {
-  expect(Totalizador.calcularDescuentoCliente(2000, "Especial")).toBe(30);
-});
-});
-
-describe ("Ciclo 7: Reglas Especiales y Promociones de Envío", () => {
-    it("debería retornar envío 0 si el monto neto >= 3000 o si el cliente es Especial", () => {
-    expect(Totalizador.esEnvioGratis(3000, "Normal")).toBe(true);
-    expect(Totalizador.esEnvioGratis(500, "Especial")).toBe(true);
-    expect(Totalizador.esEnvioGratis(500, "Normal")).toBe(false);
+  it("debería generar un objeto con la liquidación completa del pedido", () => {
+    const res = Totalizador.generarLiquidacion({
+      cantidad: 2,
+      precio: 500,
+      peso: 15,
+      estado: "CA",
+      categoria: "Alimentos",
+      cliente: "Recurrente",
     });
-
-    it("debería reducir el envío al 50% si el cliente es Frecuente", () => {
-  // Para peso 15 (tarifa 3.5), 2 ítems -> envío base = 7. Con 50% desc = 3.5
-  expect(Totalizador.calcularCostoEnvioAjustado(15, 2, 500, "Frecuente")).toBe(3.5);
-});
-it("debería calcular el Total Final sumando netos, impuestos y envío, restando todos los descuentos", () => {
-  const total = Totalizador.calcularTotalFinal({
-    neto: 1000,
-    descMonto: 30,
-    descCat: 20,
-    descCliente: 10,
-    impEstado: 82.5,
-    impCat: 0,
-    costoEnvio: 3.5
+    expect(res.neto).toBe(1000);
+    expect(res.total).toBeGreaterThan(0);
   });
-  expect(total).toBe(1026);
-});
-
-it("debería generar un objeto con la liquidación completa del pedido", () => {
-  const res = Totalizador.generarLiquidacion({
-    cantidad: 2, precio: 500, peso: 15, estado: "CA", categoria: "Alimentos", cliente: "Recurrente"
-  });
-  expect(res.neto).toBe(1000);
-  expect(res.total).toBeGreaterThan(0);
-});
 });

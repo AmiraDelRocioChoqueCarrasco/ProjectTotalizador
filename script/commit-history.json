@@ -1045,12 +1045,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "81fe6849251dae506737e345efc385eb1115ead6",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-09T23:09:09.000Z",
       "message": "feat: consolidar objeto completo de liquidacion de ventas",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/81fe6849251dae506737e345efc385eb1115ead6"
     },
     "stats": {
       "total": 40,
@@ -1060,6 +1060,25 @@
     },
     "coverage": 98.68,
     "test_count": 34,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-10T04:17:16.000Z",
+      "message": "feat: revision de codigo",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 129,
+      "additions": 47,
+      "deletions": 82,
+      "date": "2026-09-10"
+    },
+    "coverage": 98.68,
+    "test_count": 32,
     "failed_tests": 0,
     "conclusion": "success"
   }

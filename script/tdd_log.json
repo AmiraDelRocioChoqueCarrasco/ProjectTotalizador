@@ -1250,7 +1250,7 @@
     "testId": 55
   },
   {
-    "commitId": "HEAD",
+    "commitId": "81fe6849251dae506737e345efc385eb1115ead6",
     "commitName": "feat: aplicar 50% de descuento en envio a cliente frecuente",
     "commitTimestamp": 1788995072521,
     "testId": 55
@@ -1284,5 +1284,19 @@
     "commitName": "feat: consolidar objeto completo de liquidacion de ventas",
     "commitTimestamp": 1788995351024,
     "testId": 56
+  },
+  {
+    "numPassedTests": 32,
+    "failedTests": 0,
+    "numTotalTests": 32,
+    "timestamp": 1789013771312,
+    "success": true,
+    "testId": 57
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: revision de codigo",
+    "commitTimestamp": 1789013838429,
+    "testId": 57
   }
 ]
