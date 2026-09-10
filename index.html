@@ -2,53 +2,252 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Totalizador de Ventas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --border-color: #e2e8f0;
+      --radius: 12px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+    }
+
+    header {
+      margin-bottom: 28px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    header p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-top: 6px;
+    }
+
+    .grid-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    @media (max-width: 768px) {
+      .grid-layout { grid-template-columns: 1fr; }
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -2px rgba(0,0,0,0.05);
+    }
+
+    .card h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 500;
+      margin-bottom: 6px;
+      color: #334155;
+    }
+
+    .form-group input, .form-group select {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      background-color: #fff;
+      transition: all 0.2s ease;
+    }
+
+    .form-group input:focus, .form-group select:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    }
+
+    .button-group {
+      display: flex;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .btn {
+      flex: 1;
+      padding: 12px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      border: none;
+      transition: background-color 0.2s ease;
+    }
+
+    .btn-primary {
+      background-color: var(--primary);
+      color: white;
+    }
+
+    .btn-primary:hover { background-color: var(--primary-hover); }
+
+    .btn-secondary {
+      background-color: #f1f5f9;
+      color: #475569;
+    }
+
+    .btn-secondary:hover { background-color: #e2e8f0; }
+
+    #resultado-div p {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      font-size: 0.9rem;
+      color: #475569;
+      border-bottom: 1px dashed var(--border-color);
+    }
+
+    #resultado-div hr {
+      border: 0;
+      height: 1px;
+      background: var(--border-color);
+      margin: 16px 0;
+    }
+
+    #resultado-div h3 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #eff6ff;
+      color: #1e40af;
+      padding: 14px 16px;
+      border-radius: 8px;
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-top: 12px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Totalizador de Ventas</h1>
-  <form id="totalizador-form">
-    <label for="cantidad">Cantidad de items:</label>
-    <input type="number" id="cantidad" step="any"><br><br>
 
-    <label for="precio">Precio por item ($):</label>
-    <input type="number" id="precio" step="any"><br><br>
+  <div class="container">
+    <header>
+      <h1>Totalizador de Ventas</h1>
+      <p>Calculadora automatizada de impuestos, descuentos y costos de envío</p>
+    </header>
 
-    <label for="peso">Peso volumétrico por unidad:</label>
-    <input type="number" id="peso" step="any" value="0"><br><br>
+    <div class="grid-layout">
+   
+      <form id="totalizador-form" class="card">
+        <h2>Parámetros de la Venta</h2>
 
-    <label for="estado">Código de estado:</label>
-    <select id="estado">
-      <option value="CA" selected>CA - California (8.25%)</option>
-      <option value="UT">UT - Utah (6.65%)</option>
-      <option value="NV">NV - Nevada (8.00%)</option>
-      <option value="TX">TX - Texas (6.25%)</option>
-      <option value="AL">AL - Alabama (4.00%)</option>
-    </select><br><br>
+        <div class="form-group">
+          <label for="cantidad">Cantidad de items</label>
+          <input type="number" id="cantidad" step="any" placeholder="Ej: 5">
+        </div>
 
-    <label for="categoria">Categoría:</label>
-    <select id="categoria">
-      <option value="Varios" selected>Varios (Sin cargos extra)</option>
-      <option value="Alimentos">Alimentos (2% desc.)</option>
-      <option value="Bebidas alcohólicas">Bebidas alcohólicas (7% imp.)</option>
-      <option value="Material de escritorio">Material de escritorio (1.5% desc.)</option>
-      <option value="Muebles">Muebles (3% imp.)</option>
-      <option value="Electrónicos">Electrónicos (4% imp., 1% desc.)</option>
-      <option value="Vestimenta">Vestimenta (2% imp.)</option>
-    </select><br><br>
+        <div class="form-group">
+          <label for="precio">Precio por item ($)</label>
+          <input type="number" id="precio" step="any" placeholder="Ej: 100">
+        </div>
 
-    <label for="cliente">Tipo de cliente:</label>
-    <select id="cliente">
-      <option value="Normal" selected>Normal (0%)</option>
-      <option value="Recurrente">Recurrente (0.5% desc.)</option>
-      <option value="Frecuente">Frecuente (1% desc.)</option>
-      <option value="Especial">Especial (1.5% desc.)</option>
-    </select><br><br>
+        <div class="form-group">
+          <label for="peso">Peso volumétrico por unidad</label>
+          <input type="number" id="peso" step="any" value="0">
+        </div>
 
-    <button type="submit" id="btn-totalizar">Totalizar</button>
-    <button type="button" id="btn-cancelar">Cancelar</button>
-  </form>
+        <div class="form-group">
+          <label for="estado">Código de estado</label>
+          <select id="estado">
+            <option value="CA" selected>CA - California (8.25%)</option>
+            <option value="UT">UT - Utah (6.65%)</option>
+            <option value="NV">NV - Nevada (8.00%)</option>
+            <option value="TX">TX - Texas (6.25%)</option>
+            <option value="AL">AL - Alabama (4.00%)</option>
+          </select>
+        </div>
 
-  <div id="resultado-div"></div>
+        <div class="form-group">
+          <label for="categoria">Categoría</label>
+          <select id="categoria">
+            <option value="Varios" selected>Varios (Sin cargos extra)</option>
+            <option value="Alimentos">Alimentos (2% desc.)</option>
+            <option value="Bebidas alcohólicas">Bebidas alcohólicas (7% imp.)</option>
+            <option value="Material de escritorio">Material de escritorio (1.5% desc.)</option>
+            <option value="Muebles">Muebles (3% imp.)</option>
+            <option value="Electrónicos">Electrónicos (4% imp., 1% desc.)</option>
+            <option value="Vestimenta">Vestimenta (2% imp.)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="cliente">Tipo de cliente</label>
+          <select id="cliente">
+            <option value="Normal" selected>Normal (0%)</option>
+            <option value="Recurrente">Recurrente (0.5% desc.)</option>
+            <option value="Frecuente">Frecuente (1% desc.)</option>
+            <option value="Especial">Especial (1.5% desc.)</option>
+          </select>
+        </div>
+
+        <div class="button-group">
+          <button type="submit" id="btn-totalizar" class="btn btn-primary">Totalizar</button>
+          <button type="button" id="btn-cancelar" class="btn btn-secondary">Cancelar</button>
+        </div>
+      </form>
+
+   
+      <div class="card">
+        <h2>Resumen de Liquidación</h2>
+        <div id="resultado-div">
+          <p style="border: none; color: #94a3b8;">Completa el formulario y presiona <strong>Totalizar</strong> para ver el desglose detallado.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script type="module" src="./src/presenter.js"></script>
 </body>
 </html>

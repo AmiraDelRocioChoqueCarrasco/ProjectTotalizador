@@ -1280,7 +1280,7 @@
     "testId": 56
   },
   {
-    "commitId": "HEAD",
+    "commitId": "d1b77cb5aec5e83b47460f2d1796a25c9522c16a",
     "commitName": "feat: consolidar objeto completo de liquidacion de ventas",
     "commitTimestamp": 1788995351024,
     "testId": 56
@@ -1298,5 +1298,27 @@
     "commitName": "feat: revision de codigo",
     "commitTimestamp": 1789013838429,
     "testId": 57
+  },
+  {
+    "numPassedTests": 32,
+    "failedTests": 0,
+    "numTotalTests": 32,
+    "timestamp": 1789014569689,
+    "success": true,
+    "testId": 58
+  },
+  {
+    "numPassedTests": 32,
+    "failedTests": 0,
+    "numTotalTests": 32,
+    "timestamp": 1789014578700,
+    "success": true,
+    "testId": 58
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: actualizar UI del totalizador y corregir pruebas",
+    "commitTimestamp": 1789015001506,
+    "testId": 58
   }
 ]

@@ -1064,17 +1064,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d1b77cb5aec5e83b47460f2d1796a25c9522c16a",
     "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
     "commit": {
       "date": "2026-09-10T04:17:16.000Z",
       "message": "feat: revision de codigo",
-      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/d1b77cb5aec5e83b47460f2d1796a25c9522c16a"
     },
     "stats": {
       "total": 129,
       "additions": 47,
       "deletions": 82,
+      "date": "2026-09-10"
+    },
+    "coverage": 98.68,
+    "test_count": 32,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "AMIRA DEL ROCÍO CHOQUE CARRASCO",
+    "commit": {
+      "date": "2026-09-10T04:36:40.000Z",
+      "message": "style: actualizar UI del totalizador y corregir pruebas",
+      "url": "https://github.com/AmiraDelRocioChoqueCarrasco/ProjectTotalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 287,
+      "additions": 243,
+      "deletions": 44,
       "date": "2026-09-10"
     },
     "coverage": 98.68,
